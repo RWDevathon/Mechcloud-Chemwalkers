@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>ABF_MechcloudChemwalkerColony</defName>
+		<label>mechcloud chemwalker</label>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+		<race>ABF_MechcloudChemwalker</race>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ABF_MechcloudChemwalkers</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<maxGenerationAge>1</maxGenerationAge>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>ABF_LumberingChemwalkerColony</defName>
+		<label>lumbering chemwalker</label>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+		<race>ABF_LumberingChemwalker</race>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ABF_MechcloudChemwalkers</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<maxGenerationAge>1</maxGenerationAge>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

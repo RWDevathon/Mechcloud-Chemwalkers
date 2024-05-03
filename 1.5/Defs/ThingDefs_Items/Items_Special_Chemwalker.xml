@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Chemwalker inscribed shells for spawning -->
+
+    <ThingDef ParentName="BuildingBase" Name="ABF_ChemwalkerShellBase" Abstract="True">
+        <thingClass>ArtificialBeings.ABF_ArmorPawnSpawner</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>30</pathCost>
+        <useHitPoints>true</useHitPoints>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsSpecial</li>
+        </thingCategories>
+        <tickerType>Rare</tickerType>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtSculpture</nameMaker>
+                <descriptionMaker>ABF_ArtDescription_ChemwalkerShell</descriptionMaker>
+                <canBeEnjoyedAsArt>false</canBeEnjoyedAsArt>
+            </li>
+        </comps>
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Artistic</workSkill>
+            <unfinishedThingDef>ABF_UnfinishedChemwalker</unfinishedThingDef>
+            <effectWorking>Sculpt</effectWorking>
+            <soundWorking>Recipe_Sculpt</soundWorking>
+            <researchPrerequisite>ABF_MechcloudChemwalkerAlpha</researchPrerequisite>
+            <recipeUsers>
+                <li>TableSculpting</li>
+            </recipeUsers>
+        </recipeMaker>
+        <placeWorkers>
+            <li>ArtificialBeings.PlaceWorker_Mechcloud</li>
+        </placeWorkers>
+        <building>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_ChemwalkerShellBase">
+        <defName>ABF_MechcloudInscribedChemwalkerShell</defName>
+        <label>inscribed mechcloud chemwalker shell</label>
+        <description>This pile of armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of steel and silver may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <fillPercent>0.35</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>25</Mass>
+            <Beauty>5</Beauty>
+            <WorkToMake>18000</WorkToMake>
+        </statBases>
+        <costList>
+            <ABF_MechcloudChemwalkerShell>1</ABF_MechcloudChemwalkerShell>
+        </costList>
+        <modExtensions>
+            <li Class="ArtificialBeings.ABF_PawnSpawnerExtension">
+                <pawnToSpawnSuccess>ABF_MechcloudChemwalkerColony</pawnToSpawnSuccess>
+                <pawnToSpawnFailure>ABF_MechcloudChemwalkerWild</pawnToSpawnFailure>
+                <baseTicksBetweenSpawns>900000</baseTicksBetweenSpawns>
+                <naturalRadius>14.9</naturalRadius>
+                <destroyOnSpawn>True</destroyOnSpawn>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_ChemwalkerShellBase">
+        <defName>ABF_LumberingInscribedChemwalkerShell</defName>
+        <label>inscribed lumbering chemwalker shell</label>
+        <description>This massive pile of superheavy armor - meticulously inscribed - is ready to attract and retain the colossal swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this mountain of uranium, jade, gold, and steel may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <fillPercent>0.35</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>25</Mass>
+            <Beauty>5</Beauty>
+            <WorkToMake>36000</WorkToMake>
+        </statBases>
+        <costList>
+            <ABF_MechcloudChemwalkerShell>1</ABF_MechcloudChemwalkerShell>
+        </costList>
+        <modExtensions>
+            <li Class="ArtificialBeings.ABF_PawnSpawnerExtension">
+                <pawnToSpawnSuccess>ABF_LumberingChemwalkerColony</pawnToSpawnSuccess>
+                <pawnToSpawnFailure>ABF_LumberingChemwalkerWild</pawnToSpawnFailure>
+                <baseTicksBetweenSpawns>1800000</baseTicksBetweenSpawns>
+                <naturalRadius>21.9</naturalRadius>
+                <destroyOnSpawn>True</destroyOnSpawn>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef>
+        <defName>ABF_RepairMechcloudChemwalkerShell</defName>
+        <label>salvage mechcloud chemwalker shell</label>
+        <description>Salvage what you can from mechcloud chemwalker wreckage to construct a new shell.</description>
+        <jobString>Salvaging mechcloud wreckage.</jobString>
+        <workAmount>10000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <researchPrerequisite>ABF_MechcloudChemwalkerAlpha</researchPrerequisite>
+        <recipeUsers>
+            <li>FueledSmithy</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ABF_MechcloudChemwalkerDamagedShell</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+        </ingredients>
+        <products>
+            <ABF_MechcloudChemwalkerShell>1</ABF_MechcloudChemwalkerShell>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ABF_MechcloudChemwalkerDamagedShell</li>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <unfinishedThingDef>ABF_UnfinishedChemwalker</unfinishedThingDef>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>ABF_RepairLumberingChemwalkerShell</defName>
+        <label>salvage lumbering chemwalker shell</label>
+        <description>Salvage what you can from lumbering chemwalker wreckage to construct a new shell.</description>
+        <jobString>Salvaging lumbering wreckage.</jobString>
+        <workAmount>24000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <researchPrerequisite>ABF_MechcloudChemwalkerAlpha</researchPrerequisite>
+        <recipeUsers>
+            <li>FueledSmithy</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ABF_LumberingChemwalkerDamagedShell</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Jade</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>200</count>
+            </li>
+        </ingredients>
+        <products>
+            <ABF_LumberingChemwalkerShell>1</ABF_LumberingChemwalkerShell>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ABF_LumberingChemwalkerDamagedShell</li>
+                <li>Uranium</li>
+                <li>Jade</li>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <unfinishedThingDef>ABF_UnfinishedChemwalker</unfinishedThingDef>
+    </RecipeDef>
+
+</Defs>

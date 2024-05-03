@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ABF_RequiresPsychicPowers>{0} must have a psylink and psychic capability.</ABF_RequiresPsychicPowers>
+    <ABF_MechcloudAttuned>{0} has attuned to a newly loyal chemwalker.</ABF_MechcloudAttuned>
+
+</LanguageData>

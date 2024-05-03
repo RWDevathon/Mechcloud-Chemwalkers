@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ABF_RoofPenalty>5% max: Is roofed</ABF_RoofPenalty>
+    <ABF_BonusPerAnimaTree>{0}% bonus: 40% bonus per anima tree</ABF_BonusPerAnimaTree>
+    <ABF_PenaltyPerMechcloudShell>{0}% penalty: 3% penalty per inscribed mechcloud shell</ABF_PenaltyPerMechcloudShell>
+    <ABF_PenaltyPerLumberingShell>{0}% penalty: 6% penalty per inscribed mechcloud shell</ABF_PenaltyPerLumberingShell>
+	<ABF_PenaltyPerArtificial>{0}% penalty: 2% penalty per artificial entity</ABF_PenaltyPerArtificial>
+
+</LanguageData>

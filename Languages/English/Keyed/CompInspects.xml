@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ABF_RequiresPlacement>Can only accumulate power while placed</ABF_RequiresPlacement>
+    <ABF_EstimatedTimeLeft>Estimated time until ready for attunement: {0}</ABF_EstimatedTimeLeft>
+    <ABF_ReadyForAttunement>Ready for attunement</ABF_ReadyForAttunement>
+    <ABF_CurrentAnimationWorkFactor>Current accumulation rate: {0}</ABF_CurrentAnimationWorkFactor>
+
+</LanguageData>

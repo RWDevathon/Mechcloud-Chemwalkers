@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BodyDef>
+        <defName>ABF_MechcloudChemwalker</defName>
+        <label>Mechcloud Chemwalker</label>
+        <corePart>
+            <def>ABF_MechcloudCuirass</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <groups>
+                <li>Torso</li>
+            </groups>
+            <parts>
+                <li>
+                    <def>ABF_MechcloudCore</def>
+                    <coverage>0.001</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>ABF_MechcloudHelm</def>
+                    <coverage>0.09</coverage>
+                    <height>Top</height>
+                    <groups>
+                        <li>UpperHead</li>
+                        <li>FullHead</li>
+                        <li>HeadAttackTool</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>ABF_MechcloudPauldron</def>
+                    <customLabel>left pauldron</customLabel>
+                    <coverage>0.12</coverage>
+                    <groups>
+                        <li>Shoulders</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>ABF_MechcloudRerebrace</def>
+                            <customLabel>left rerebrace</customLabel>
+                            <coverage>0.85</coverage>
+                            <groups>
+                                <li>Arms</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>ABF_MechcloudVambrace</def>
+                                    <customLabel>left vambrace</customLabel>
+                                    <coverage>0.6</coverage>
+                                    <height>Bottom</height>
+                                    <groups>
+                                        <li>Arms</li>
+                                    </groups>
+                                    <parts>
+                                        <li>
+                                            <def>ABF_MechcloudGauntlet</def>
+                                            <customLabel>left gauntlet</customLabel>
+                                            <coverage>0.2</coverage>
+                                            <height>Bottom</height>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>LeftHand</li>
+                                            </groups>
+                                        </li>
+                                    </parts>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>ABF_MechcloudPauldron</def>
+                    <customLabel>right pauldron</customLabel>
+                    <coverage>0.12</coverage>
+                    <groups>
+                        <li>Shoulders</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>ABF_MechcloudRerebrace</def>
+                            <customLabel>right rerebrace</customLabel>
+                            <coverage>0.85</coverage>
+                            <groups>
+                                <li>Arms</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>ABF_MechcloudVambrace</def>
+                                    <customLabel>right vambrace</customLabel>
+                                    <coverage>0.6</coverage>
+                                    <height>Bottom</height>
+                                    <groups>
+                                        <li>Arms</li>
+                                    </groups>
+                                    <parts>
+                                        <li>
+                                            <def>ABF_MechcloudGauntlet</def>
+                                            <customLabel>right gauntlet</customLabel>
+                                            <coverage>0.2</coverage>
+                                            <height>Bottom</height>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                            </groups>
+                                        </li>
+                                    </parts>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>ABF_MechcloudFauld</def>
+                    <coverage>0.32</coverage>
+                    <height>Bottom</height>
+                    <groups>
+                        <li>Waist</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>ABF_MechcloudCuisse</def>
+                            <customLabel>left cuisse</customLabel>
+                            <coverage>0.4</coverage>
+                            <groups>
+                                <li>Legs</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>ABF_MechcloudGreave</def>
+                                    <customLabel>left greave</customLabel>
+                                    <coverage>0.3</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                            </parts>
+                        </li>
+                        <li>
+                            <def>ABF_MechcloudCuisse</def>
+                            <customLabel>right cuisse</customLabel>
+                            <coverage>0.4</coverage>
+                            <groups>
+                                <li>Legs</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>ABF_MechcloudGreave</def>
+                                    <customLabel>right greave</customLabel>
+                                    <coverage>0.3</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+            </parts>
+        </corePart>
+    </BodyDef>
+
+</Defs>

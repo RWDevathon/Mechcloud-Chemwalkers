@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="ABF_BaseChemwalkerPawn">
+		<defName>ABF_MechcloudChemwalker</defName>
+		<label>mechcloud chemwalker</label>
+		<description>A suit of intricately inscribed and psychically imbued metal armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, Mechcloud chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies often refer to them as 'buzzing armor' due to the unsettling sound of the mechanite swarm rattling inside the armor - and often believe the armor to be possessed by spirits that can be communed with.</description>
+		<alienRace>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+				</apparelList>
+			</raceRestriction>
+			<graphicPaths>
+                <body>
+                    <path>Things/Pawns/Humanlikes/Mechcloud/body/</path>
+                </body>
+                <skinShader>Cutout</skinShader>
+            </graphicPaths>
+            <generalSettings>
+                <alienPartGenerator>
+					<headBodyPartDef>ABF_MechcloudHelm</headBodyPartDef>
+					<headTypes Inherit="False">
+                        <li>ABF_MechcloudBarbuteHead</li>
+                        <li>ABF_MechcloudDomedArmetHead</li>
+                        <li>ABF_MechcloudKettleHead</li>
+                    </headTypes>
+                    <bodyTypes Inherit="False">
+                        <li>ABF_HeavyPlateMechcloud</li>
+                        <li>ABF_HalfPlateMechcloud</li>
+                        <li>ABF_ElegantPlateMechcloud</li>
+                    </bodyTypes>
+                    <colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--Gray-->
+										<weight>4</weight>
+										<min>RGBA(127, 127, 127, 255)</min>
+										<max>RGBA(127, 127, 127, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<min>RGBA(255, 255, 255, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+                </alienPartGenerator>
+            </generalSettings>
+		</alienRace>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<MoveSpeed>4.60</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<GlobalLearningFactor>0.1</GlobalLearningFactor>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<SocialImpact>0.05</SocialImpact>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+            <FilthRate>2</FilthRate>
+			<Mass>30</Mass>
+		</statBases>
+        <tools>
+            <li>
+                <label>left fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8.2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>8.2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+		<race>
+			<body>ABF_MechcloudChemwalker</body>
+            <nameGenerator>ABF_MechcloudNames</nameGenerator>
+            <detritusLeavings>
+                <li>
+                    <def>ABF_MechcloudChemwalkerDamagedShell</def>
+                    <texOverrideIndex>10</texOverrideIndex>
+                    <spawnChance>1</spawnChance>
+                </li>
+            </detritusLeavings>
+            <!-- <deathAction>
+                <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
+            </deathAction> -->
+		</race>
+		<modExtensions>
+            <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+                <canBeReprogrammable>false</canBeReprogrammable>
+                <droneSkillLevel>6</droneSkillLevel>
+                <letPawnKindHandleDroneBackstories>true</letPawnKindHandleDroneBackstories>
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+                    <li>Mood</li>
+                    <li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_ChemfuelNeed</key><value>20</value></li>
+                </artificialNeeds>
+                <whiteMedicineList>
+                </whiteMedicineList>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+            </li>
+		</modExtensions>
+		<butcherProducts>
+            <ABF_MechcloudChemwalkerDamagedShell>1</ABF_MechcloudChemwalkerDamagedShell>
+		</butcherProducts>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudCuirass</defName>
+        <label>cuirass</label>
+        <hitPoints>50</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudHelm</defName>
+        <label>helm</label>
+        <hitPoints>45</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudPauldron</defName>
+        <label>pauldron</label>
+        <hitPoints>40</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudRerebrace</defName>
+        <label>rerebrace</label>
+        <hitPoints>35</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <frostbiteVulnerability>0.01</frostbiteVulnerability>
+        <tags>
+            <li>ManipulationLimbCore</li>
+        </tags>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudVambrace</defName>
+        <label>vambrace</label>
+        <hitPoints>30</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <frostbiteVulnerability>0.01</frostbiteVulnerability>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudGauntlet</defName>
+        <label>gauntlet</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <frostbiteVulnerability>0.01</frostbiteVulnerability>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudDigit</defName>
+        <label>digit</label>
+        <hitPoints>15</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <frostbiteVulnerability>0.01</frostbiteVulnerability>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+            <li>MovingLimbSegment</li>
+        </tags>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudFauld</defName>
+        <label>fauld</label>
+        <hitPoints>45</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <frostbiteVulnerability>0.01</frostbiteVulnerability>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudCuisse</defName>
+        <label>cuisse</label>
+        <hitPoints>40</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <frostbiteVulnerability>0.01</frostbiteVulnerability>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>ABF_MechcloudGreave</defName>
+        <label>greave</label>
+        <hitPoints>30</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <frostbiteVulnerability>0.01</frostbiteVulnerability>
+        <tags>
+            <li>MovingLimbSegment</li>
+        </tags>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+
+</Defs>

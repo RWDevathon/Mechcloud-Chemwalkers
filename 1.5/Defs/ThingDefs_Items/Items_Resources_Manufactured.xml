@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="ABF_ChemwalkerPartBase" ParentName="ResourceBase" Abstract="True">
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <thingCategories>
+            <li>ABF_ChemwalkerParts</li>
+        </thingCategories>
+        <techLevel>Medieval</techLevel>
+        <stackLimit>1</stackLimit>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smelt</effectWorking>
+            <soundWorking>Recipe_Smelt</soundWorking>
+            <unfinishedThingDef>ABF_UnfinishedChemwalker</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_ChemwalkerPartBase">
+        <defName>ABF_MechcloudChemwalkerShell</defName>
+        <label>mechcloud chemwalker shell</label>
+        <description>This pile of armor - unadorned and unassuming - has yet to be inscribed with the sigils and psychic catalysts necessary to be animated and yet to be given a chemfuel core to attract the swarm that will animate it. One day, though, this pile of steel and silver may yet serve a great cause - or perhaps it already has and patiently awaits the opportunity to do so again?</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>25</Mass>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <Chemfuel>100</Chemfuel>
+            <Silver>4</Silver>
+            <Gold>1</Gold>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>ABF_MechcloudChemwalkerAlpha</researchPrerequisite>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_ChemwalkerPartBase">
+        <defName>ABF_LumberingChemwalkerShell</defName>
+        <label>lumbering chemwalker shell</label>
+        <description>This massive pile of superheavy armor - unadorned and unassuming - has yet to be inscribed with the sigils and psychic catalysts necessary to be animated and yet to be given a chemfuel core to attract the swarm that will animate it. One day, though, this mountain of uranium, jade, gold, and steel may yet serve a great cause - or perhaps it already has and patiently awaits the opportunity to do so again?</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <WorkToMake>96000</WorkToMake>
+            <Mass>120</Mass>
+        </statBases>
+        <costList>
+            <Uranium>80</Uranium>
+            <Jade>40</Jade>
+            <Steel>40</Steel>
+            <Chemfuel>300</Chemfuel>
+            <Silver>12</Silver>
+            <Gold>2</Gold>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>ABF_MechcloudChemwalkerAlpha</researchPrerequisite>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- Damaged Chemwalker shells -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ABF_MechcloudChemwalkerDamagedShell</defName>
+        <label>mechcloud chemwalker wreckage</label>
+        <description>This pile of battered and broken armor - little more than scrap - is all but devoid of the sigils and mechanites that once kept it animated. With repairs and sufficient time, though, this pile of steel and silver may yet once again serve its original cause - or perhaps the cause of a new master?</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <thingCategories>
+            <li>ABF_ChemwalkerParts</li>
+        </thingCategories>
+        <techLevel>Medieval</techLevel>
+        <stackLimit>1</stackLimit>
+        <statBases>
+            <MarketValue>400</MarketValue>
+            <Mass>20</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ABF_LumberingChemwalkerDamagedShell</defName>
+        <label>lumbering chemwalker wreckage</label>
+        <description>This massive pile of battered and broken armor - a vast scrapheap more than anything recognizable - is all but devoid of the sigils and mechanites that once kept it animated. With repairs and sufficient time, though, this mountain of uranium, jade, gold, and steel may yet once again serve its original cause - or perhaps the cause of a new master?</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <thingCategories>
+            <li>ABF_ChemwalkerParts</li>
+        </thingCategories>
+        <techLevel>Medieval</techLevel>
+        <stackLimit>1</stackLimit>
+        <statBases>
+            <MarketValue>1600</MarketValue>
+            <Mass>100</Mass>
+        </statBases>
+    </ThingDef>
+
+</Defs>

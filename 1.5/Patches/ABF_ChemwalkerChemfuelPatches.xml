@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Ensure that chemfuel actually can fulfill the chemfuel need -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]</xpath>
+        <value>
+            <li Class="ArtificialBeings.ABF_NeedFulfillerExtension">
+                <needOffsetRelations>
+                    <li><key>ABF_ChemfuelNeed</key><value>1</value></li>
+                </needOffsetRelations>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

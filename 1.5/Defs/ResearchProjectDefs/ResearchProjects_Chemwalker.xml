@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef >
+		<defName>ABF_MechcloudChemwalkerAlpha</defName>
+		<label>mechcloud chemwalkers</label>
+        <description>Craft suits of armor at a fueled smithy, inscribe them with runes at an art bench, and allow them to accumulate power to raise eternally loyal servants.</description>
+        <baseCost>500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <techprintCount>2</techprintCount>
+        <techprintCommonality>1.5</techprintCommonality>
+        <techprintMarketValue>500</techprintMarketValue>
+        <heldByFactionCategoryTags>
+            <li>Tribal</li>
+            <li>Empire</li>
+        </heldByFactionCategoryTags>
+		<prerequisites>
+			<li>Smithing</li>
+        </prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4.25</researchViewY>
+        <discoveredLetterTitle>About: Mechcloud Chemwalkers</discoveredLetterTitle>
+        <discoveredLetterText>You now have the knowledge necessary to create suits of armor that can be animated and imbued with power to serve you - but it requires several steps to get started. There are four steps to bringing a mechcloud chemwalker to animate existence:\n- Crafting the suit of armor at a fueled smithy.\n- Inscribing the armor with sigils of power at an art bench.\n- Allowing the armor to accumulate mechanites from the environment - ideally nearby an anima tree and away from artificial structures that may lure mechanites elsewhere.\n- Attuning the empowered armor to the will of a psycaster who will command it to serve for all time.</discoveredLetterText>
+    </ResearchProjectDef>
+
+</Defs>

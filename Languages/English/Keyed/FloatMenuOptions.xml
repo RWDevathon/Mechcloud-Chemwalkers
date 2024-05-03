@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Unit creation -->
+	<ABF_ArmorNotReady>Armor not ready for attuning</ABF_ArmorNotReady>
+    <ABF_PackUpArmor>Pack up armor</ABF_PackUpArmor>
+    <ABF_AttuneToArmor>Attune armor</ABF_AttuneToArmor>
+
+</LanguageData>

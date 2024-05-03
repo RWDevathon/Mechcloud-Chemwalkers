@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="ABF_BaseChemwalkerPawn">
+		<defName>ABF_LumberingChemwalker</defName>
+		<label>lumbering chemwalker</label>
+		<description>A superhumanly massive suit of elaborately inscribed and psychically imbued metal armor animated by a ravenous swarm of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, lumbering chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies often refer to them as 'stormcloud golems' due to the incessant rattling sound of the mechanite swarm swirling inside the armor like a raging tempest - often believing that only dread warlords or powerful heroes can possess a spirit capable of inhabiting and wielding such a construct.</description>
+		<alienRace>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+				</apparelList>
+			</raceRestriction>
+			<graphicPaths>
+                <body>
+                    <path>Things/Pawns/Humanlikes/Mechcloud/body/</path>
+                </body>
+                <skinShader>Cutout</skinShader>
+            </graphicPaths>
+            <generalSettings>
+                <minAgeForAdulthood>0</minAgeForAdulthood>
+                <alienPartGenerator>
+					<headBodyPartDef>ABF_MechcloudHelm</headBodyPartDef>
+                    <headOffset>(0, 0.55)</headOffset>
+					<headTypes Inherit="False">
+                        <li>ABF_MechcloudBarbuteHead</li>
+                        <li>ABF_MechcloudDomedArmetHead</li>
+                        <li>ABF_MechcloudKettleHead</li>
+                    </headTypes>
+                    <bodyTypes Inherit="False">
+                        <li>ABF_HeavyPlateMechcloud</li>
+                        <li>ABF_HalfPlateMechcloud</li>
+                        <li>ABF_ElegantPlateMechcloud</li>
+                    </bodyTypes>
+                    <colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--Gray-->
+										<weight>4</weight>
+										<min>RGBA(127, 127, 127, 255)</min>
+										<max>RGBA(127, 127, 127, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<min>RGBA(255, 255, 255, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+					<customDrawSize>(2)</customDrawSize>
+                    <customPortraitDrawSize>(2)</customPortraitDrawSize>
+                </alienPartGenerator>
+            </generalSettings>
+		</alienRace>
+		<statBases>
+			<MarketValue>1800</MarketValue>
+			<MoveSpeed>3.60</MoveSpeed>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<GlobalLearningFactor>0.1</GlobalLearningFactor>
+			<WorkSpeedGlobal>1.4</WorkSpeedGlobal>
+			<SocialImpact>0.05</SocialImpact>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+            <IncomingDamageFactor>0.8</IncomingDamageFactor>
+            <FilthRate>4</FilthRate>
+			<Mass>120.0</Mass>
+		</statBases>
+		<tools>
+            <li>
+                <label>left fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>24.6</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>42</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>24.6</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>42</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+			<li>
+				<label>cuirass</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>ABF_MechcloudChemwalker</body>
+			<baseHealthScale>6</baseHealthScale>
+			<baseBodySize>2</baseBodySize>
+            <nameGenerator>ABF_LumberingNames</nameGenerator>
+            <!-- <deathAction>
+                <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
+            </deathAction> -->
+            <detritusLeavings>
+                <li>
+                    <def>ABF_LumberingChemwalkerDamagedShell</def>
+                    <texOverrideIndex>10</texOverrideIndex>
+                    <spawnChance>1</spawnChance>
+                </li>
+            </detritusLeavings>
+		</race>
+		<modExtensions>
+            <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+                <canBeReprogrammable>false</canBeReprogrammable>
+                <droneSkillLevel>8</droneSkillLevel>
+                <letPawnKindHandleDroneBackstories>true</letPawnKindHandleDroneBackstories>
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+                    <li>Mood</li>
+                    <li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_ChemfuelNeed</key><value>80</value></li>
+                </artificialNeeds>
+            </li>
+		</modExtensions>
+		<butcherProducts>
+            <ABF_LumberingChemwalkerDamagedShell>1</ABF_LumberingChemwalkerDamagedShell>
+		</butcherProducts>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

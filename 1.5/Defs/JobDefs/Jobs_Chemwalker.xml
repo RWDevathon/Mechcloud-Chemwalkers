@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <JobDef>
+        <defName>ABF_AttuneToArmor</defName>
+        <driverClass>ArtificialBeings.JobDriver_AttuneToArmor</driverClass>
+        <reportString>Attuning to armor.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>ABF_PackUpArmor</defName>
+        <driverClass>ArtificialBeings.JobDriver_PackUpArmor</driverClass>
+        <reportString>Packing up armor.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+</Defs>

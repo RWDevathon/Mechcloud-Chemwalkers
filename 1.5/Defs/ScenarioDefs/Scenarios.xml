@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ScenarioDef>
+        <defName>ABF_ReclusiveApprentice</defName>
+        <label>Reclusive Apprentice</label>
+        <description>Your master was a strict teacher, who taught you the joys of isolation just as much as he begrudgingly shared the power of the buzzing armors that handled most everything around the workshop. Alas, the ones from the stars shattered the armors and killed your master, forcing you to scrounge up his notes and flee. Escaping with a few of the remaining armors, supplies, and several beasts that feed the buzzing swarms inside the armors, what remains of his legacy is in your hands. Will you seek to honor it, or forge your own path?</description>
+        <scenario>
+            <summary>One tribal psycaster, with four mechcloud chemwalkers.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PlayerTribe</factionDef>
+            </playerFaction>
+            <parts>
+                <!-- Config page -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>1</pawnCount>
+                    <pawnChoiceCount>5</pawnChoiceCount>
+                </li>
+
+                <li Class="ArtificialBeings.ScenPart_StartingDrones">
+                    <def>ABF_ConfigureStartingDrones</def>
+                    <droneCounts>
+                        <li>
+                            <kindDef>ABF_MechcloudChemwalkerColony</kindDef>
+                            <count>2</count>
+                        </li>
+                    </droneCounts>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                </li>
+
+                <!-- Player starting things (Near perfect copy of Tribal start) -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Pemmican</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Chemfuel</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <count>20</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Club</thingDef>
+                    <stuff>WoodLog</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Ikwa</thingDef>
+                    <stuff>Steel</stuff>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Bow_Short</thingDef>
+                    <count>2</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Pila</thingDef>
+                </li>
+
+                <!-- Starting Techprints -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Techprint_ABF_MechcloudChemwalkerAlpha</thingDef>
+                    <count>2</count>
+                </li>
+
+                <!-- Starting Inscribed Armors -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ABF_MechcloudInscribedChemwalkerShell</thingDef>
+                    <count>4</count>
+                    <quality>Normal</quality>
+                </li>
+
+                <!-- Scatter some things near player start -->
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>200</count>
+                </li>
+
+                <!-- Starting with boomalopes for chemfuel -->
+                <li Class="ScenPart_StartingAnimal">
+                    <def>StartingAnimal</def>
+                    <animalKind>Boomalope</animalKind>
+                    <count>4</count>
+                </li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>The ones from the stars made short work of the buzzing armors that protected your master, but they did not see you escape. Your master taught nearly everything he knew. His servants are yours to command and his knowledge is yours to wield. What will you do now?</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+                <li Class="ScenPart_ForcedTrait" MayRequire="Ludeon.RimWorld.Biotech">
+                    <def>ForcedTrait</def>
+                    <chance>1</chance>
+                    <context>PlayerStarter</context>
+                    <trait>Recluse</trait>
+                </li>
+
+                <li Class="ArtificialBeings.ScenPart_StartingPawnsPsychic">
+                    <def>ABF_StartingPawnsPsychic</def>
+                    <psylinkLevel>1</psylinkLevel>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Wild chemwalkers should try to grab and consume chemfuel if they can get to it -->
+    <ThinkTreeDef>
+        <defName>ABF_MainWildSelfPreservationBehaviorChemwalker</defName>
+        <insertTag>Humanlike_PreMain</insertTag>
+        <insertPriority>100</insertPriority>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="ThinkNode_ConditionalPawnKind">
+                    <pawnKind>ABF_MechcloudChemwalkerWild</pawnKind>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>SatisfyingNeeds</tagToGive>
+                            <subNodes>
+                                <li Class="ArtificialBeings.JobGiver_GetMechNeed">
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <li Class="ThinkNode_ConditionalPawnKind">
+                    <pawnKind>ABF_LumberingChemwalkerWild</pawnKind>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>SatisfyingNeeds</tagToGive>
+                            <subNodes>
+                                <li Class="ArtificialBeings.JobGiver_GetMechNeed">
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+    <ThinkTreeDef>
+        <defName>ABF_IdleWildChemwalkerBehaviorCore</defName>
+        <insertTag>Humanlike_PostMain</insertTag>
+        <insertPriority>100</insertPriority>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="ThinkNode_ConditionalPawnKind">
+                    <pawnKind>ABF_MechcloudChemwalkerWild</pawnKind>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Idle</tagToGive>
+                            <subNodes>
+                                <!-- Wander -->
+                                <li Class="JobGiver_WanderAnywhere">
+                                    <maxDanger>Deadly</maxDanger>
+                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+
+                <li Class="ThinkNode_ConditionalPawnKind">
+                    <pawnKind>ABF_LumberingChemwalkerWild</pawnKind>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Idle</tagToGive>
+                            <subNodes>
+                                <!-- Wander -->
+                                <li Class="JobGiver_WanderAnywhere">
+                                    <maxDanger>Deadly</maxDanger>
+                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+
+</Defs>

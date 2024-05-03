@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HeadTypeDef>
+        <defName>ABF_MechcloudBarbuteHead</defName>
+        <graphicPath>Things/Pawns/Humanlikes/Mechcloud/head/Barbute</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_MechcloudDomedArmetHead</defName>
+        <graphicPath>Things/Pawns/Humanlikes/Mechcloud/head/DomedArmet</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_MechcloudKettleHead</defName>
+        <graphicPath>Things/Pawns/Humanlikes/Mechcloud/head/Kettle</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+</Defs>
