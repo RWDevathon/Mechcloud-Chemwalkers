@@ -14,7 +14,7 @@
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>SatisfyingNeeds</tagToGive>
                             <subNodes>
-                                <li Class="ArtificialBeings.JobGiver_GetMechNeed">
+                                <li Class="ArtificialBeings.JobGiver_FillArtificialNeed">
                                 </li>
                             </subNodes>
                         </li>
@@ -27,7 +27,7 @@
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>SatisfyingNeeds</tagToGive>
                             <subNodes>
-                                <li Class="ArtificialBeings.JobGiver_GetMechNeed">
+                                <li Class="ArtificialBeings.JobGiver_FillArtificialNeed">
                                 </li>
                             </subNodes>
                         </li>
