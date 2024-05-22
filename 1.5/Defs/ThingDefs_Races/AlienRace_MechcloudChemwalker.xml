@@ -114,16 +114,16 @@
                     <spawnChance>1</spawnChance>
                 </li>
             </detritusLeavings>
-            <!-- <deathAction>
-                <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
-            </deathAction> -->
 		</race>
 		<modExtensions>
             <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
                 <canBeSapient>false</canBeSapient>
                 <canBeReprogrammable>false</canBeReprogrammable>
                 <droneSkillLevel>6</droneSkillLevel>
-                <letPawnKindHandleDroneBackstories>true</letPawnKindHandleDroneBackstories>
+                <inherentSkills>
+                    <li><key>Shooting</key><value>3</value></li>
+                    <li><key>Melee</key><value>3</value></li>
+                </inherentSkills>
                 <blacklistedNeeds>
                     <li>DrugDesire</li>
                     <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
@@ -140,8 +140,6 @@
                 <artificialNeeds>
                     <li><key>ABF_ChemfuelNeed</key><value>20</value></li>
                 </artificialNeeds>
-                <whiteMedicineList>
-                </whiteMedicineList>
                 <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
             </li>
 		</modExtensions>
