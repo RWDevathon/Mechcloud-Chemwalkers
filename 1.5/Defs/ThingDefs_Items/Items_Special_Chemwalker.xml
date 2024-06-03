@@ -93,7 +93,7 @@
             <WorkToMake>36000</WorkToMake>
         </statBases>
         <costList>
-            <ABF_MechcloudChemwalkerShell>1</ABF_MechcloudChemwalkerShell>
+            <ABF_LumberingChemwalkerShell>1</ABF_LumberingChemwalkerShell>
         </costList>
         <modExtensions>
             <li Class="ArtificialBeings.ABF_PawnSpawnerExtension">
