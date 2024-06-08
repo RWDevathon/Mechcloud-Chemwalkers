@@ -2,7 +2,7 @@
 <Defs>
 
     <ResearchProjectDef >
-		<defName>ABF_MechcloudChemwalkerAlpha</defName>
+		<defName>ABF_ResearchProject_Chemwalker_MechcloudBasics</defName>
 		<label>mechcloud chemwalkers</label>
         <description>Craft suits of armor at a fueled smithy, inscribe them with runes at an art bench, and allow them to accumulate power to raise eternally loyal servants.</description>
         <baseCost>500</baseCost>

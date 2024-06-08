@@ -2,8 +2,8 @@
 <Defs>
 
     <ScenarioDef>
-        <defName>ABF_ReclusiveApprentice</defName>
-        <label>Reclusive Apprentice</label>
+        <defName>ABF_Scenario_Chemwalker_ReclusiveApprentice</defName>
+        <label>reclusive apprentice</label>
         <description>Your master was a strict teacher, who taught you the joys of isolation just as much as he begrudgingly shared the power of the buzzing armors that handled most everything around the workshop. Alas, the ones from the stars shattered the armors and killed your master, forcing you to scrounge up his notes and flee. Escaping with a few of the remaining armors, supplies, and several beasts that feed the buzzing swarms inside the armors, what remains of his legacy is in your hands. Will you seek to honor it, or forge your own path?</description>
         <scenario>
             <summary>One tribal psycaster, with four mechcloud chemwalkers.</summary>
@@ -20,10 +20,10 @@
                 </li>
 
                 <li Class="ArtificialBeings.ScenPart_StartingDrones">
-                    <def>ABF_ConfigureStartingDrones</def>
+                    <def>ABF_ScenPart_Artificial_ConfigureStartingDrones</def>
                     <droneCounts>
                         <li>
-                            <kindDef>ABF_MechcloudChemwalkerColony</kindDef>
+                            <kindDef>ABF_PawnKind_Chemwalker_Player_Mechcloud</kindDef>
                             <count>2</count>
                         </li>
                     </droneCounts>
@@ -79,14 +79,14 @@
                 <!-- Starting Techprints -->
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>Techprint_ABF_MechcloudChemwalkerAlpha</thingDef>
+                    <thingDef>Techprint_ABF_ResearchProject_Chemwalker_MechcloudBasics</thingDef>
                     <count>2</count>
                 </li>
 
                 <!-- Starting Inscribed Armors -->
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>ABF_MechcloudInscribedChemwalkerShell</thingDef>
+                    <thingDef>ABF_Thing_Chemwalker_Shell_MechcloudInscribed</thingDef>
                     <count>4</count>
                     <quality>Normal</quality>
                 </li>
@@ -120,7 +120,7 @@
                 </li>
 
                 <li Class="ArtificialBeings.ScenPart_StartingPawnsPsychic">
-                    <def>ABF_StartingPawnsPsychic</def>
+                    <def>ABF_ScenPart_Artificial_StartingPawnsPsychic</def>
                     <psylinkLevel>1</psylinkLevel>
                 </li>
 

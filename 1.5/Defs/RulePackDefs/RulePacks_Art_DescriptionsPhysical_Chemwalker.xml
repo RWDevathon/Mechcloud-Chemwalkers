@@ -2,7 +2,7 @@
 <Defs>
 
     <RulePackDef>
-        <defName>ABF_ArtDescription_ChemwalkerShell</defName>
+        <defName>ABF_RulePack_Chemwalker_ShellArtDescription</defName>
         <rulePack>
         <rulesStrings>
             <li>physical_description_root->This suit's [single_piece] has an inscribed [depiction] of [image]. [desc_sentence_group]</li>

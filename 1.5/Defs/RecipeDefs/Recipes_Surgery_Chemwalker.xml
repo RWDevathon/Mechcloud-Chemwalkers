@@ -2,23 +2,23 @@
 <Defs>
 
 	<!-- Base Class for all mechcloud surgeries that applies to the appropriate races -->
-    <RecipeDef Name="ABF_surgeryMechcloudBase" Abstract="True">
+    <RecipeDef Name="ABF_Recipe_Chemwalker_SurgeryBase" Abstract="True">
         <effectWorking>Repair</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
-        <workSpeedStat>ABF_ArtificialOperationSpeed</workSpeedStat>
+        <workSpeedStat>ABF_Stat_Artificial_OperationSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <workSkillLearnFactor>16</workSkillLearnFactor>
         <anesthetize>false</anesthetize>
         <recipeUsers>
-            <li>ABF_MechcloudChemwalker</li>
-            <li>ABF_LumberingChemwalker</li>
+            <li>ABF_Thing_Chemwalker_Mechcloud</li>
+            <li>ABF_Thing_Chemwalker_Lumbering</li>
         </recipeUsers>
     </RecipeDef>
 
 	<!-- Surgery to terminate a mechcloud chemwalker -->
-    <RecipeDef ParentName="ABF_surgeryMechcloudBase">
-		<defName>ABF_ExpungeMechcloud</defName>
-		<label>Expunge mechcloud</label>
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_SurgeryBase">
+		<defName>ABF_Recipe_Chemwalker_ExpungeMechcloud</defName>
+		<label>expunge mechcloud</label>
 		<description>Expunge the mechcloud inhabiting this shell to leave it inanimate.</description>
 		<workerClass>ArtificialBeings.Recipe_Kill</workerClass>
 		<jobString>Expunging mechcloud.</jobString>
@@ -29,13 +29,13 @@
 		<targetsBodyPart>false</targetsBodyPart>
 	</RecipeDef>
 
-	<!-- Surgery to attune a mechcloud chemwalker that is unattuned -->
-    <RecipeDef ParentName="ABF_surgeryMechcloudBase">
-		<defName>ABF_AttuneMechcloud</defName>
-		<label>Attune mechcloud</label>
-		<description>Mechclouds that have no psychic connection or loyalty can be forcibly attuned to by a psychically gifted individual, taking command of it.</description>
+	<!-- Surgery to attune a chemwalker that is unattuned -->
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_SurgeryBase">
+		<defName>ABF_Recipe_Chemwalker_AttuneChemwalker</defName>
+		<label>attune chemwalker</label>
+		<description>Chemwalkers that have no psychic connection or loyalty can be forcibly attuned to by a psychically gifted individual, taking command of it.</description>
 		<workerClass>ArtificialBeings.Recipe_AttuneWildArmor</workerClass>
-		<jobString>Attuning mechcloud.</jobString>
+		<jobString>Attuning chemwalker.</jobString>
 		<workAmount>800</workAmount>
 		<hideBodyPartNames>true</hideBodyPartNames>
         <isViolation>false</isViolation>
@@ -43,14 +43,14 @@
 	</RecipeDef>
 
     <!-- Injecting chemfuel into a chemwalker -->
-    <RecipeDef ParentName="ABF_surgeryMechcloudBase">
-        <defName>ABF_ChemfuelInjection</defName>
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_SurgeryBase">
+        <defName>ABF_Recipe_Chemwalker_InjectChemfuel</defName>
         <label>inject chemfuel</label>
         <description>Manually replenish a chemwalker's chemfuel reserves.</description>
         <jobString>injecting chemfuel into TargetA.</jobString>
         <effectWorking>Repair</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
-        <workSpeedStat>ABF_ArtificialOperationSpeed</workSpeedStat>
+        <workSpeedStat>ABF_Stat_Artificial_OperationSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <workSkillLearnFactor>0</workSkillLearnFactor>
         <workAmount>200</workAmount>

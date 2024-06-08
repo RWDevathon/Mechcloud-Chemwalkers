@@ -3,16 +3,11 @@ using Verse.AI.Group;
 
 namespace ArtificialBeings
 {
+    // This DeathActionWorker exists to be picked up by a harmony patch to kill downed Chemwalkers of non-player factions.
     public class DeathActionWorker_Mechcloud : DeathActionWorker
     {
         public override void PawnDied(Corpse corpse, Lord lord)
         {
-            IntVec3 position = corpse.Position;
-            Map map = corpse.Map;
-            ThingDef thingDef = corpse.InnerPawn.def.butcherProducts.FirstOrFallback().thingDef;
-            corpse.Destroy();
-            Thing thing = ThingMaker.MakeThing(thingDef);
-            GenSpawn.Spawn(thing, position, map);
         }
     }
 }

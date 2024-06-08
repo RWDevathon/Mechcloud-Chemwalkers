@@ -2,13 +2,13 @@
 <Defs>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>ABF_MechcloudChemwalkerWild</defName>
-		<label>Mechcloud chemwalker</label>
-		<race>ABF_MechcloudChemwalker</race>
+		<defName>ABF_PawnKind_Chemwalker_None_Mechcloud</defName>
+		<label>mechcloud chemwalker</label>
+		<race>ABF_Thing_Chemwalker_Mechcloud</race>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>ABF_MechcloudChemwalkers</li>
+					<li>ABF_SpawnCategory_Chemwalker_Basic</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
@@ -19,13 +19,13 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>ABF_LumberingChemwalkerWild</defName>
-		<label>Lumbering chemwalker</label>
-		<race>ABF_LumberingChemwalker</race>
+		<defName>ABF_PawnKind_Chemwalker_None_Lumbering</defName>
+		<label>lumbering chemwalker</label>
+		<race>ABF_Thing_Chemwalker_Lumbering</race>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
-					<li>ABF_MechcloudChemwalkers</li>
+					<li>ABF_SpawnCategory_Chemwalker_Basic</li>
 				</categories>
 			</li>
 		</backstoryFiltersOverride>

@@ -2,7 +2,7 @@
 <Defs>
 
     <HediffDef>
-        <defName>ABF_ChemfuelShortage</defName>
+        <defName>ABF_Hediff_Chemwalker_ChemfuelShortage</defName>
         <label>Chemfuel shortage</label>
         <description>This unit has insufficient chemfuel to operate and is rapidly losing the ability to function.\n\nShould it not be replenished soon, the unit will perish!</description>
         <maxSeverity>1</maxSeverity>

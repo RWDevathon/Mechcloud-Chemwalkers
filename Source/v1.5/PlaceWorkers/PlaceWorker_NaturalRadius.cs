@@ -24,7 +24,7 @@ namespace ArtificialBeings
                     }
                 }
 
-                List<Thing> mechcloudSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_MechcloudInscribedChemwalkerShell);
+                List<Thing> mechcloudSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MechcloudInscribed);
                 for (int i = mechcloudSpawners.Count - 1; i >= 0; i--)
                 {
                     if (center.DistanceTo(mechcloudSpawners[i].Position) <= radius)
@@ -33,7 +33,7 @@ namespace ArtificialBeings
                     }
                 }
 
-                List<Thing> lumberingSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_LumberingInscribedChemwalkerShell);
+                List<Thing> lumberingSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_LumberingInscribed);
                 for (int i = lumberingSpawners.Count - 1; i >= 0; i--)
                 {
                     if (center.DistanceTo(lumberingSpawners[i].Position) <= radius)
@@ -89,7 +89,7 @@ namespace ArtificialBeings
                 }
 
                 // 3% penalty per inscribed mechcloud shell
-                List<Thing> mechcloudShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_MechcloudInscribedChemwalkerShell);
+                List<Thing> mechcloudShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MechcloudInscribed);
                 int mechcloudShellsInRange = 0;
                 for (int i = mechcloudShells.Count - 1; i >= 0; i--)
                 {
@@ -112,7 +112,7 @@ namespace ArtificialBeings
                 }
 
                 // 6% penalty per inscribed lumbering shell
-                List<Thing> lumberingShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_MechcloudInscribedChemwalkerShell);
+                List<Thing> lumberingShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MechcloudInscribed);
                 int lumberingShellsInRange = 0;
                 for (int i = lumberingShells.Count - 1; i >= 0; i--)
                 {

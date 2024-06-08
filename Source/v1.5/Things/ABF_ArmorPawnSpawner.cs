@@ -46,7 +46,7 @@ namespace ArtificialBeings
                 {
                     yield return new FloatMenuOption("ABF_AttuneToArmor".Translate(), delegate ()
                     {
-                        Job job = new Job(ABF_JobDefOf.ABF_AttuneToArmor, new LocalTargetInfo(this));
+                        Job job = new Job(ABF_JobDefOf.ABF_Job_Chemwalker_AttuneToArmor, new LocalTargetInfo(this));
                         selPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
                     });
                 }
@@ -63,7 +63,7 @@ namespace ArtificialBeings
             // Always allow players to "uninstall" the armor pile.
             yield return new FloatMenuOption("ABF_PackUpArmor".Translate(), delegate ()
             {
-                Job job = new Job(ABF_JobDefOf.ABF_PackUpArmor, new LocalTargetInfo(this));
+                Job job = new Job(ABF_JobDefOf.ABF_Job_Chemwalker_PackUpArmor, new LocalTargetInfo(this));
                 selPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
             });
 
@@ -98,7 +98,7 @@ namespace ArtificialBeings
                     }
                 }
 
-                List<Thing> mechcloudSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_MechcloudInscribedChemwalkerShell);
+                List<Thing> mechcloudSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MechcloudInscribed);
                 for (int i = mechcloudSpawners.Count - 1; i >= 0; i--)
                 {
                     if (Position.DistanceTo(mechcloudSpawners[i].Position) <= radius)
@@ -107,7 +107,7 @@ namespace ArtificialBeings
                     }
                 }
 
-                List<Thing> lumberingSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_LumberingInscribedChemwalkerShell);
+                List<Thing> lumberingSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_LumberingInscribed);
                 for (int i = lumberingSpawners.Count - 1; i >= 0; i--)
                 {
                     if (Position.DistanceTo(lumberingSpawners[i].Position) <= radius)
@@ -296,7 +296,7 @@ namespace ArtificialBeings
                     }
                 }
 
-                List<Thing> mechcloudSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_MechcloudInscribedChemwalkerShell);
+                List<Thing> mechcloudSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MechcloudInscribed);
                 for (int i = mechcloudSpawners.Count - 1; i >= 0; i--)
                 {
                     if (Position.DistanceTo(mechcloudSpawners[i].Position) <= radius)
@@ -305,7 +305,7 @@ namespace ArtificialBeings
                     }
                 }
 
-                List<Thing> lumberingSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_LumberingInscribedChemwalkerShell);
+                List<Thing> lumberingSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_LumberingInscribed);
                 for (int i = lumberingSpawners.Count - 1; i >= 0; i--)
                 {
                     if (Position.DistanceTo(lumberingSpawners[i].Position) <= radius)

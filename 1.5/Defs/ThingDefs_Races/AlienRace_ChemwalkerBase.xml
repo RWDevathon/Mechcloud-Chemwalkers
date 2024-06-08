@@ -2,7 +2,7 @@
 <Defs>
 
     <!-- Chemwalker Humanlike Base -->
-	<AlienRace.ThingDef_AlienRace Name="ABF_BaseChemwalkerPawn" ParentName="BasePawn" Abstract="True">
+	<AlienRace.ThingDef_AlienRace Name="ABF_Thing_Chemwalker_BasePawn" ParentName="BasePawn" Abstract="True">
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<Mass>70</Mass>
@@ -153,11 +153,11 @@
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>2500</lifeExpectancy>
 			<leatherDef>Leather_Human</leatherDef>
-			<nameGenerator>ABF_MechcloudNames</nameGenerator>
-            <nameGeneratorFemale>ABF_MechcloudNames</nameGeneratorFemale>
+			<nameGenerator>ABF_RulePack_Chemwalker_NameRulesMechcloud</nameGenerator>
+            <nameGeneratorFemale>ABF_RulePack_Chemwalker_NameRulesMechcloud</nameGeneratorFemale>
 			<needsRest>false</needsRest>
 			<foodType>None</foodType>
-			<fleshType>ABF_Chemwalker</fleshType>
+			<fleshType>ABF_FleshType_Chemwalker_Base</fleshType>
 			<canBePredatorPrey>false</canBePredatorPrey>
             <isImmuneToInfections>true</isImmuneToInfections>
             <alwaysAwake>true</alwaysAwake>
@@ -165,7 +165,7 @@
             <hasCorpse>false</hasCorpse>
 			<lifeStageAges>
 				<li>
-					<def>ABF_ArtificialComplete</def>
+					<def>ABF_LifeStage_Artificial_Complete</def>
 					<minAge>0.0</minAge>
 				</li>
 			</lifeStageAges>

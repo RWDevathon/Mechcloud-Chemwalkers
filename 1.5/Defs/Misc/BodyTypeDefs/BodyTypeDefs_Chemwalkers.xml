@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <BodyTypeDef Name="ABF_ChemwalkerBaseBodyType" Abstract="True">
+    <BodyTypeDef Name="ABF_BodyType_Chemwalker_Base" Abstract="True">
         <headOffset>(0.04, 0.54)</headOffset>
         <bodyGraphicScale>(1, 0.9)</bodyGraphicScale>
         <woundAnchors>
@@ -154,16 +154,16 @@
         </woundAnchors>
     </BodyTypeDef>
 
-    <BodyTypeDef ParentName="ABF_ChemwalkerBaseBodyType">
-        <defName>ABF_HeavyPlateMechcloud</defName>
+    <BodyTypeDef ParentName="ABF_BodyType_Chemwalker_Base">
+        <defName>ABF_BodyType_Chemwalker_HeavyPlate</defName>
     </BodyTypeDef>
 
-    <BodyTypeDef ParentName="ABF_ChemwalkerBaseBodyType">
-        <defName>ABF_HalfPlateMechcloud</defName>
+    <BodyTypeDef ParentName="ABF_BodyType_Chemwalker_Base">
+        <defName>ABF_BodyType_Chemwalker_HalfPlate</defName>
     </BodyTypeDef>
 
-    <BodyTypeDef ParentName="ABF_ChemwalkerBaseBodyType">
-        <defName>ABF_ElegantPlateMechcloud</defName>
+    <BodyTypeDef ParentName="ABF_BodyType_Chemwalker_Base">
+        <defName>ABF_BodyType_Chemwalker_ElegantPlate</defName>
     </BodyTypeDef>
 
 </Defs>

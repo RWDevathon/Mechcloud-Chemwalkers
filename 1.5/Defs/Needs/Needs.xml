@@ -2,7 +2,7 @@
 <Defs>
 
     <NeedDef>
-        <defName>ABF_ChemfuelNeed</defName>
+        <defName>ABF_Need_Chemwalker_Chemfuel</defName>
         <needClass>ArtificialBeings.Need_Artificial</needClass>
         <label>chemfuel</label>
         <description>Chemfuel is the amount of chemfuel a pawn currently retains. If it is at zero, the pawn will swiftly shut down and perish.</description>
@@ -12,7 +12,7 @@
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <modExtensions>
             <li Class="ArtificialBeings.ABF_ArtificialNeedExtension">
-                <hediffToApplyOnEmpty>ABF_ChemfuelShortage</hediffToApplyOnEmpty>
+                <hediffToApplyOnEmpty>ABF_Hediff_Chemwalker_ChemfuelShortage</hediffToApplyOnEmpty>
                 <hediffRisePerDay>1</hediffRisePerDay>
                 <hediffFallPerDay>0.25</hediffFallPerDay>
             </li>

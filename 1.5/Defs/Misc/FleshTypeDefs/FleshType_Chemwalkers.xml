@@ -4,7 +4,7 @@
     <!-- Copy of Mechanoid flesh type, without using it directly to avoid C# IsMechanoid checks. -->
 
     <FleshTypeDef>
-        <defName>ABF_Chemwalker</defName>
+        <defName>ABF_FleshType_Chemwalker_Base</defName>
         <corpseCategory>CorpsesMechanoid</corpseCategory>
         <damageEffecter>Damage_HitMechanoid</damageEffecter>
         <genericWounds>

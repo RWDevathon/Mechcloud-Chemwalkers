@@ -9,7 +9,7 @@
         <thinkRoot Class="ThinkNode_Priority">
             <subNodes>
                 <li Class="ThinkNode_ConditionalPawnKind">
-                    <pawnKind>ABF_MechcloudChemwalkerWild</pawnKind>
+                    <pawnKind>ABF_PawnKind_Chemwalker_None_Mechcloud</pawnKind>
                     <subNodes>
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>SatisfyingNeeds</tagToGive>
@@ -22,7 +22,7 @@
                 </li>
 
                 <li Class="ThinkNode_ConditionalPawnKind">
-                    <pawnKind>ABF_LumberingChemwalkerWild</pawnKind>
+                    <pawnKind>ABF_PawnKind_Chemwalker_None_Lumbering</pawnKind>
                     <subNodes>
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>SatisfyingNeeds</tagToGive>
@@ -44,7 +44,7 @@
         <thinkRoot Class="ThinkNode_Priority">
             <subNodes>
                 <li Class="ThinkNode_ConditionalPawnKind">
-                    <pawnKind>ABF_MechcloudChemwalkerWild</pawnKind>
+                    <pawnKind>ABF_PawnKind_Chemwalker_None_Mechcloud</pawnKind>
                     <subNodes>
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>Idle</tagToGive>
@@ -60,7 +60,7 @@
                 </li>
 
                 <li Class="ThinkNode_ConditionalPawnKind">
-                    <pawnKind>ABF_LumberingChemwalkerWild</pawnKind>
+                    <pawnKind>ABF_PawnKind_Chemwalker_None_Lumbering</pawnKind>
                     <subNodes>
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>Idle</tagToGive>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace ParentName="ABF_BaseChemwalkerPawn">
-		<defName>ABF_MechcloudChemwalker</defName>
+	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
+		<defName>ABF_Thing_Chemwalker_Mechcloud</defName>
 		<label>mechcloud chemwalker</label>
 		<description>A suit of intricately inscribed and psychically imbued metal armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, Mechcloud chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies often refer to them as 'buzzing armor' due to the unsettling sound of the mechanite swarm rattling inside the armor - and often believe the armor to be possessed by spirits that can be communed with.</description>
 		<alienRace>
@@ -19,16 +19,16 @@
             </graphicPaths>
             <generalSettings>
                 <alienPartGenerator>
-					<headBodyPartDef>ABF_MechcloudHelm</headBodyPartDef>
+					<headBodyPartDef>ABF_BodyPart_Chemwalker_Helm</headBodyPartDef>
 					<headTypes Inherit="False">
-                        <li>ABF_MechcloudBarbuteHead</li>
-                        <li>ABF_MechcloudDomedArmetHead</li>
-                        <li>ABF_MechcloudKettleHead</li>
+                        <li>ABF_HeadType_Chemwalker_Barbute</li>
+                        <li>ABF_HeadType_Chemwalker_DomedArmet</li>
+                        <li>ABF_HeadType_Chemwalker_Kettle</li>
                     </headTypes>
                     <bodyTypes Inherit="False">
-                        <li>ABF_HeavyPlateMechcloud</li>
-                        <li>ABF_HalfPlateMechcloud</li>
-                        <li>ABF_ElegantPlateMechcloud</li>
+                        <li>ABF_BodyType_Chemwalker_HeavyPlate</li>
+                        <li>ABF_BodyType_Chemwalker_HalfPlate</li>
+                        <li>ABF_BodyType_Chemwalker_ElegantPlate</li>
                     </bodyTypes>
                     <colorChannels Inherit="False">
 						<li>
@@ -105,11 +105,14 @@
             </li>
         </tools>
 		<race>
-			<body>ABF_MechcloudChemwalker</body>
-            <nameGenerator>ABF_MechcloudNames</nameGenerator>
+			<body>ABF_Body_Chemwalker_Mechcloud</body>
+            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesMechcloud</nameGenerator>
+            <deathAction>
+                <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
+            </deathAction>
             <detritusLeavings>
                 <li>
-                    <def>ABF_MechcloudChemwalkerDamagedShell</def>
+                    <def>ABF_Thing_Chemwalker_Shell_MechcloudDamaged</def>
                     <texOverrideIndex>10</texOverrideIndex>
                     <spawnChance>1</spawnChance>
                 </li>
@@ -138,13 +141,13 @@
                     <li>Indoors</li>
                 </blacklistedNeeds>
                 <artificialNeeds>
-                    <li><key>ABF_ChemfuelNeed</key><value>20</value></li>
+                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>20</value></li>
                 </artificialNeeds>
                 <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
             </li>
 		</modExtensions>
 		<butcherProducts>
-            <ABF_MechcloudChemwalkerDamagedShell>1</ABF_MechcloudChemwalkerDamagedShell>
+            <ABF_Thing_Chemwalker_Shell_MechcloudDamaged>1</ABF_Thing_Chemwalker_Shell_MechcloudDamaged>
 		</butcherProducts>
 	</AlienRace.ThingDef_AlienRace>
 

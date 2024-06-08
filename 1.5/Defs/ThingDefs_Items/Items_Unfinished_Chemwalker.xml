@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="UnfinishedBase">
-        <defName>ABF_UnfinishedChemwalker</defName>
+        <defName>ABF_Thing_Chemwalker_Shell_Unfinished</defName>
         <label>unfinished chemwalker shell</label>
         <description>An unfinished chemwalker shell.</description>
         <statBases>

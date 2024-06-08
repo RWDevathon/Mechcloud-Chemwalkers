@@ -2,7 +2,7 @@
 <Defs>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudCuirass</defName>
+        <defName>ABF_BodyPart_Chemwalker_Cuirass</defName>
         <label>cuirass</label>
         <hitPoints>50</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -12,7 +12,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudHelm</defName>
+        <defName>ABF_BodyPart_Chemwalker_Helm</defName>
         <label>helm</label>
         <hitPoints>45</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -22,7 +22,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudPauldron</defName>
+        <defName>ABF_BodyPart_Chemwalker_Pauldron</defName>
         <label>pauldron</label>
         <hitPoints>40</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -35,7 +35,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudRerebrace</defName>
+        <defName>ABF_BodyPart_Chemwalker_Rerebrace</defName>
         <label>rerebrace</label>
         <hitPoints>35</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -49,7 +49,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudVambrace</defName>
+        <defName>ABF_BodyPart_Chemwalker_Vambrace</defName>
         <label>vambrace</label>
         <hitPoints>30</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -63,7 +63,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudGauntlet</defName>
+        <defName>ABF_BodyPart_Chemwalker_Gauntlet</defName>
         <label>gauntlet</label>
         <hitPoints>25</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -77,22 +77,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudDigit</defName>
-        <label>digit</label>
-        <hitPoints>15</hitPoints>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-        <skinCovered>false</skinCovered>
-        <frostbiteVulnerability>0.01</frostbiteVulnerability>
-        <tags>
-            <li>ManipulationLimbSegment</li>
-            <li>MovingLimbSegment</li>
-        </tags>
-        <bleedRate>0</bleedRate>
-        <solid>true</solid>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>ABF_MechcloudFauld</defName>
+        <defName>ABF_BodyPart_Chemwalker_Fauld</defName>
         <label>fauld</label>
         <hitPoints>45</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -103,7 +88,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudCuisse</defName>
+        <defName>ABF_BodyPart_Chemwalker_Cuisse</defName>
         <label>cuisse</label>
         <hitPoints>40</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -117,7 +102,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>ABF_MechcloudGreave</defName>
+        <defName>ABF_BodyPart_Chemwalker_Greave</defName>
         <label>greave</label>
         <hitPoints>30</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>

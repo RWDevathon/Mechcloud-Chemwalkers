@@ -7,7 +7,7 @@
         <value>
             <li Class="ArtificialBeings.ABF_NeedFulfillerExtension">
                 <needOffsetRelations>
-                    <li><key>ABF_ChemfuelNeed</key><value>1</value></li>
+                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>1</value></li>
                 </needOffsetRelations>
             </li>
         </value>

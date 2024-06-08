@@ -3,7 +3,7 @@
 
     <!-- This Rulepackdef is what finds the txt files to be used in the later rulepacks -->
     <RulePackDef>
-        <defName>ABF_ChemwalkerNameRules</defName>
+        <defName>ABF_RulePack_Chemwalker_NameRulesBase</defName>
         <rulePack>
             <rulesFiles>
                 <li>Mechcloud->ABF_ChemwalkerNames/MechcloudNames</li>
@@ -16,9 +16,9 @@
     <!-- This is the item that goes into the racedef's namegenerator
         Example - <nameGenerator>ATR_AndroidMaleNames</nameGenerator> -->
     <RulePackDef>
-        <defName>ABF_MechcloudNames</defName>
+        <defName>ABF_RulePack_Chemwalker_NameRulesMechcloud</defName>
         <include>
-            <li>ABF_ChemwalkerNameRules</li>
+            <li>ABF_RulePack_Chemwalker_NameRulesBase</li>
         </include>
         <rulePack>
             <rulesStrings>
@@ -28,9 +28,9 @@
     </RulePackDef>
 
     <RulePackDef>
-        <defName>ABF_LumberingNames</defName>
+        <defName>ABF_RulePack_Chemwalker_NameRulesLumbering</defName>
         <include>
-            <li>ABF_ChemwalkerNameRules</li>
+            <li>ABF_RulePack_Chemwalker_NameRulesBase</li>
         </include>
         <rulePack>
             <rulesStrings>
