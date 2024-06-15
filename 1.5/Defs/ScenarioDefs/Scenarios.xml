@@ -6,7 +6,7 @@
         <label>The Artificer</label>
         <description>Your master was a strict teacher, who taught you the joys of isolation just as much as he begrudgingly shared the power of the buzzing armors that handled most everything around the workshop. Alas, the ones from the stars shattered the armors and killed your master, forcing you to scrounge up his notes and flee. Escaping with a few of the remaining armors, supplies, and several beasts that feed the buzzing swarms inside the armors, what remains of his legacy is in your hands. Will you seek to honor it, or forge your own path?</description>
         <scenario>
-            <summary>One tribal psycaster, with four mechcloud chemwalkers.</summary>
+            <summary>One tribal psycaster, with multiple mechcloud chemwalkers.</summary>
             <playerFaction>
                 <def>PlayerFaction</def>
                 <factionDef>PlayerTribe</factionDef>
