@@ -207,6 +207,13 @@ namespace ArtificialBeings
             return stringBuilder.ToString();
         }
 
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref workRemaining, "ABF_armorPawnWorkRemaining", -1);
+            Scribe_Values.Look(ref readyForAttunement, "ABF_armorPawnReadyToSpawn", false);
+        }
+
         public virtual void SpawnPawn(Faction ownerFaction)
         {
             if (!Spawned)
@@ -285,7 +292,7 @@ namespace ArtificialBeings
             if (radius != null)
             {
                 int artificialThingsNearby = Map.listerArtificialBuildingsForMeditation.GetForCell(Position, (float)radius).Count;
-                workFactor -= Mathf.Min(1, 0.02f * artificialThingsNearby);
+                workFactor -= Mathf.Max(0, 0.02f * artificialThingsNearby);
 
                 List<Thing> animaTrees = Map.listerThings.ThingsOfDef(ThingDefOf.Plant_TreeAnima);
                 for (int i = animaTrees.Count - 1; i >= 0; i--)
@@ -314,6 +321,7 @@ namespace ArtificialBeings
                     }
                 }
             }
+            workFactor = Mathf.Clamp(workFactor, 0f, 10f);
         }
 
         public virtual int EstimatedTicksRemaining()
