@@ -39,17 +39,6 @@
                     </li>
                 </capMods>
             </li>
-            <li>
-                <label>extreme</label>
-                <minSeverity>0.75</minSeverity>
-                <lifeThreatening>true</lifeThreatening>
-                <capMods>
-                    <li>
-                        <capacity>Consciousness</capacity>
-                        <setMax>0.1</setMax>
-                    </li>
-                </capMods>
-            </li>
         </stages>
     </HediffDef>
 
