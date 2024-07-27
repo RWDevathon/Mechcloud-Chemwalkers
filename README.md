@@ -22,6 +22,9 @@ A Mechcloud Chemwalker or their larger Lumbering Chemwalker variant can be creat
 ## Known Issues / Incompatibilities
 * No known issues yet.
 
+## Contributions
+Trapinlive: Thumbnail/Preview
+
 ## Links
 [Discord](https://discord.gg/udNCpbkABT)
 
