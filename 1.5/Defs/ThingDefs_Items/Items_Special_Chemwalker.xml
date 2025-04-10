@@ -106,4 +106,81 @@
         </modExtensions>
     </ThingDef>
 
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_FlakkerInscribed</defName>
+        <label>inscribed flakker chemwalker shell</label>
+        <description>This pile of flak armor - plus a helmet - has been meticulously imprinted with psychic sigils and is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this unassuming armor may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <fillPercent>0.25</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>20</Mass>
+            <Beauty>1</Beauty>
+            <WorkToMake>18000</WorkToMake>
+        </statBases>
+        <costList>
+            <Chemfuel>100</Chemfuel>
+            <Apparel_FlakPants>1</Apparel_FlakPants>
+            <Apparel_FlakJacket>1</Apparel_FlakJacket>
+            <Apparel_AdvancedHelmet>1</Apparel_AdvancedHelmet>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+                <li>FlakArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="ArtificialBeings.ABF_PawnSpawnerExtension">
+                <pawnToSpawnSuccess>ABF_PawnKind_Chemwalker_Player_Flakker</pawnToSpawnSuccess>
+                <pawnToSpawnFailure>ABF_PawnKind_Chemwalker_None_Flakker</pawnToSpawnFailure>
+                <baseTicksBetweenSpawns>900000</baseTicksBetweenSpawns>
+                <naturalRadius>14.9</naturalRadius>
+                <destroyOnSpawn>True</destroyOnSpawn>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_MarineInscribed</defName>
+        <label>inscribed marine chemwalker shell</label>
+        <description>This pile of power armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of plasteel and components may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <fillPercent>0.25</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>20</Mass>
+            <Beauty>3</Beauty>
+            <WorkToMake>28000</WorkToMake>
+        </statBases>
+        <costList>
+            <Chemfuel>200</Chemfuel>
+            <Apparel_PowerArmorHelmet>1</Apparel_PowerArmorHelmet>
+            <Apparel_PowerArmor>1</Apparel_PowerArmor>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+                <li>PoweredArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="ArtificialBeings.ABF_PawnSpawnerExtension">
+                <pawnToSpawnSuccess>ABF_PawnKind_Chemwalker_Player_Marine</pawnToSpawnSuccess>
+                <pawnToSpawnFailure>ABF_PawnKind_Chemwalker_None_Marine</pawnToSpawnFailure>
+                <baseTicksBetweenSpawns>1800000</baseTicksBetweenSpawns>
+                <naturalRadius>21.9</naturalRadius>
+                <destroyOnSpawn>True</destroyOnSpawn>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
 </Defs>

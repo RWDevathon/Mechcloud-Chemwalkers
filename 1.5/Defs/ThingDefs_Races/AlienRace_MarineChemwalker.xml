@@ -2,9 +2,9 @@
 <Defs>
 
 	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
-		<defName>ABF_Thing_Chemwalker_Lumbering</defName>
-		<label>lumbering chemwalker</label>
-		<description>A superhumanly massive suit of elaborately inscribed and psychically imbued metal armor animated by a ravenous swarm of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, lumbering chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies often refer to them as "stormcloud golems" due to the incessant rattling sound of the mechanite swarm swirling inside the armor like a raging tempest - often believing that only dread warlords or powerful heroes can possess a spirit capable of inhabiting and wielding such a construct.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.</description>
+		<defName>ABF_Thing_Chemwalker_Marine</defName>
+		<label>marine chemwalker</label>
+		<description>A suit of intricately inscribed and psychically imbued power armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, marine chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies see these "ghosts from the stars" as suits of magical armor possessed by spirits of those who came from beyond their world to continue in death what they did in life.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.</description>
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -13,24 +13,21 @@
 			</raceRestriction>
 			<graphicPaths>
                 <body>
-                    <path>Things/Pawns/Humanlikes/Mechcloud/body/</path>
+                    <path>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor_Male</path>
                 </body>
+                <head>
+                    <path>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet</path>
+                </head>
                 <skinShader>Cutout</skinShader>
             </graphicPaths>
             <generalSettings>
-                <minAgeForAdulthood>0</minAgeForAdulthood>
                 <alienPartGenerator>
 					<headBodyPartDef>ABF_BodyPart_Chemwalker_Helm</headBodyPartDef>
-                    <headOffset>(0, 0.55)</headOffset>
 					<headTypes Inherit="False">
-                        <li>ABF_HeadType_Chemwalker_Barbute</li>
-                        <li>ABF_HeadType_Chemwalker_DomedArmet</li>
-                        <li>ABF_HeadType_Chemwalker_Kettle</li>
+                        <li>ABF_HeadType_Chemwalker_PowerArmorHelmet</li>
                     </headTypes>
                     <bodyTypes Inherit="False">
-                        <li>ABF_BodyType_Chemwalker_HeavyPlate</li>
-                        <li>ABF_BodyType_Chemwalker_HalfPlate</li>
-                        <li>ABF_BodyType_Chemwalker_ElegantPlate</li>
+                        <li>Male</li>
                     </bodyTypes>
                     <colorChannels Inherit="False">
 						<li>
@@ -55,39 +52,37 @@
 							</second>
 						</li>
 					</colorChannels>
-					<customDrawSize>(2)</customDrawSize>
-                    <customPortraitDrawSize>(2)</customPortraitDrawSize>
                 </alienPartGenerator>
             </generalSettings>
 		</alienRace>
 		<statBases>
-			<MarketValue>1800</MarketValue>
-			<MoveSpeed>3.60</MoveSpeed>
-			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
-			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>4.90</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<GlobalLearningFactor>0.1</GlobalLearningFactor>
-			<WorkSpeedGlobal>1.4</WorkSpeedGlobal>
+			<WorkSpeedGlobal>1</WorkSpeedGlobal>
 			<SocialImpact>0.05</SocialImpact>
-			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
             <IncomingDamageFactor>0.8</IncomingDamageFactor>
-            <FilthRate>4</FilthRate>
-			<Mass>120.0</Mass>
+            <FilthRate>2</FilthRate>
+			<Mass>40</Mass>
 		</statBases>
-		<tools>
+        <tools>
             <li>
                 <label>left fist</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>24.6</power>
+                <power>10.2</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>42</amount>
+                            <amount>18</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -97,41 +92,28 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>24.6</power>
+                <power>10.2</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>42</amount>
+                            <amount>18</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
             </li>
-			<li>
-				<label>cuirass</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>8.2</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>Torso</linkedBodyPartsGroup>
-                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
+        </tools>
 		<race>
 			<body>ABF_Body_Chemwalker_Mechcloud</body>
-			<baseHealthScale>6</baseHealthScale>
-			<baseBodySize>2</baseBodySize>
-            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesLumbering</nameGenerator>
+            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesMechcloud</nameGenerator>
             <deathAction>
                 <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
             </deathAction>
             <detritusLeavings>
                 <li>
-                    <def>ABF_Thing_Chemwalker_Shell_LumberingDamaged</def>
+                    <def>ABF_Thing_Chemwalker_Shell_MarineDamaged</def>
                     <texOverrideIndex>10</texOverrideIndex>
                     <spawnChance>1</spawnChance>
                 </li>
@@ -141,10 +123,10 @@
             <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
                 <canBeSapient>false</canBeSapient>
                 <canBeReprogrammable>false</canBeReprogrammable>
-                <droneSkillLevel>8</droneSkillLevel>
+                <droneSkillLevel>6</droneSkillLevel>
                 <inherentSkills>
-                    <li><key>Shooting</key><value>4</value></li>
-                    <li><key>Melee</key><value>4</value></li>
+                    <li><key>Shooting</key><value>6</value></li>
+                    <li><key>Melee</key><value>6</value></li>
                 </inherentSkills>
                 <blacklistedNeeds>
                     <li>DrugDesire</li>
@@ -160,12 +142,13 @@
                     <li>Indoors</li>
                 </blacklistedNeeds>
                 <artificialNeeds>
-                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>80</value></li>
+                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>40</value></li>
                 </artificialNeeds>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
             </li>
 		</modExtensions>
 		<butcherProducts>
-            <ABF_Thing_Chemwalker_Shell_LumberingDamaged>1</ABF_Thing_Chemwalker_Shell_LumberingDamaged>
+            <ABF_Thing_Chemwalker_Shell_MarineDamaged>1</ABF_Thing_Chemwalker_Shell_MarineDamaged>
 		</butcherProducts>
 	</AlienRace.ThingDef_AlienRace>
 

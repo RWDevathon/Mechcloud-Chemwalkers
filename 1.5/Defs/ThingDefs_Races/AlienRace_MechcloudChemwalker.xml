@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
 		<defName>ABF_Thing_Chemwalker_Mechcloud</defName>
 		<label>mechcloud chemwalker</label>
-		<description>A suit of intricately inscribed and psychically imbued metal armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, Mechcloud chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies often refer to them as 'buzzing armor' due to the unsettling sound of the mechanite swarm rattling inside the armor - and often believe the armor to be possessed by spirits that can be communed with.</description>
+		<description>A suit of intricately inscribed and psychically imbued metal armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, Mechcloud chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies often refer to them as "buzzing armor" due to the unsettling sound of the mechanite swarm rattling inside the armor - and often believe the armor to be possessed by spirits that can be communed with.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.</description>
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -64,7 +64,8 @@
 			<GlobalLearningFactor>0.1</GlobalLearningFactor>
 			<WorkSpeedGlobal>1</WorkSpeedGlobal>
 			<SocialImpact>0.05</SocialImpact>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
             <FilthRate>2</FilthRate>
 			<Mass>30</Mass>
 		</statBases>

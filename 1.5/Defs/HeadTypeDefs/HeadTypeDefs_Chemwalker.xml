@@ -19,4 +19,16 @@
         <gender>None</gender>
     </HeadTypeDef>
 
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_AdvancedHelmet</defName>
+        <graphicPath>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet_Male_Average_Normal</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_PowerArmorHelmet</defName>
+        <graphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet_Male_Average_Normal</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
 </Defs>
