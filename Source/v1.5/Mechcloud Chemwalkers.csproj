@@ -177,9 +177,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\CompTargetable_SingleChemwalkerShell.cs" />
+    <Compile Include="Components\CompTargetEffectProperties_JumpstartChemwalker.cs" />
+    <Compile Include="Components\CompTargetEffect_JumpstartChemwalker.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_Mechcloud.cs" />
     <Compile Include="Extensions\ThingExtensions.cs" />
     <Compile Include="Harmony\ABF_Pawn_HealthTracker_Patch.cs" />
+    <Compile Include="JobDrivers\JobDriver_JumpstartChemwalker.cs" />
     <Compile Include="JobDrivers\JobDriver_PackUpArmor.cs" />
     <Compile Include="JobDrivers\JobDriver_AttuneToArmor.cs" />
     <Compile Include="MechcloudChemwalkers.cs" />

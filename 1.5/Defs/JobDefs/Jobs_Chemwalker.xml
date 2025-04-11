@@ -15,4 +15,10 @@
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
 
+    <JobDef>
+        <defName>ABF_Job_Chemwalker_JumpstartChemwalker</defName>
+        <driverClass>ArtificialBeings.JobDriver_JumpstartChemwalker</driverClass>
+        <reportString>jumpstarting TargetA.</reportString>
+    </JobDef>
+
 </Defs>

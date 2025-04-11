@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!-- Uninscribed Chemwalker shells -->
+
     <ThingDef Name="ABF_Thing_Chemwalker_ShellBase" ParentName="ResourceBase" Abstract="True">
         <soundInteract>Standard_Drop</soundInteract>
         <soundDrop>Standard_Drop</soundDrop>
@@ -156,6 +158,46 @@
             <MarketValue>400</MarketValue>
             <Mass>20</Mass>
         </statBases>
+    </ThingDef>
+
+    <!-- Chemwalker Infusions -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ABF_Thing_Chemwalker_MechaniteInfusion</defName>
+        <label>chemwalker infusion kit</label>
+        <description>A one-use dose of mechanites within a delicate capsule designed to disintegrate on exposure with the chemfuel starter within a chemwalker's inscribed shell. The mechanites released upon the reaction will help jumpstart the initialization of the chemwalker - although a single dose may not be enough to fully bring a chemwalker into animation.\n\nInfusion kits like these must be crafted at the drug lab by carefully disassembling mech serums or by processing and packaging luciferium. As the mechanites contained within pose no threat to the initialization process, the infusion of mechanites will greatly hasten the process of awakening the chemwalker.\n\nEach dose is equivalent to half a quadrum's worth of accumulation, at average rate.</description>
+        <graphicData>
+            <texPath>Things/Item/Drug/Luciferium</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <thingCategories>
+            <li>Drugs</li>
+        </thingCategories>
+        <stackLimit>10</stackLimit>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <DeteriorationRate>2.0</DeteriorationRate>
+            <Mass>0.01</Mass>
+            <Flammability>0</Flammability>
+            <MarketValue>30</MarketValue>
+            <WorkToMake>2550</WorkToMake>
+        </statBases>
+        <techLevel>Ultra</techLevel>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Use infusion kit</useLabel>
+                <useDuration>0</useDuration>
+                <warmupMote>Mote_ResurrectAbility</warmupMote>
+            </li>
+            <li Class="CompProperties_Targetable">
+                <compClass>ArtificialBeings.CompTargetable_SingleChemwalkerShell</compClass>
+            </li>
+            <li Class="ArtificialBeings.CompTargetEffectProperties_JumpstartChemwalker">
+                <jumpstartTicks>450000</jumpstartTicks>
+            </li>
+        </comps>
+        <tradeability>None</tradeability>
     </ThingDef>
 
 </Defs>
