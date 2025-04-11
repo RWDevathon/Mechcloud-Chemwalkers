@@ -1,4 +1,0 @@
-A:\Michael\SteamLibrary\steamapps\common\RimWorld\Mods\Dev_MH Mechcloud Chemwalkers\1.4\Assemblies\MH Mechanite Chemwalkers.dll
-A:\Michael\SteamLibrary\steamapps\common\RimWorld\Mods\Dev_MH Mechcloud Chemwalkers\Source\v1.4\obj\Debug\MH Mechanite Chemwalkers.csproj.AssemblyReference.cache
-A:\Michael\SteamLibrary\steamapps\common\RimWorld\Mods\Dev_MH Mechcloud Chemwalkers\Source\v1.4\obj\Debug\MH Mechanite Chemwalkers.csproj.CoreCompileInputs.cache
-A:\Michael\SteamLibrary\steamapps\common\RimWorld\Mods\Dev_MH Mechcloud Chemwalkers\Source\v1.4\obj\Debug\MH Mechanite Chemwalkers.dll
