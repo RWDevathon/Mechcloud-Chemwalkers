@@ -2,6 +2,7 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
+    <exclude>Compatibility\1.5\VFEP\Source</exclude>
     <exclude>Source</exclude>
   </Excluded>
 </Configuration>

@@ -115,6 +115,33 @@ namespace ArtificialBeings
                         GenDraw.DrawLineBetween(GenThing.TrueCenter(Position, Rot4.North, def.size, def.Altitude), lumberingSpawners[i].TrueCenter(), SimpleColor.Red);
                     }
                 }
+
+                List<Thing> flakkerSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_FlakkerInscribed);
+                for (int i = flakkerSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (Position.DistanceTo(flakkerSpawners[i].Position) <= radius)
+                    {
+                        GenDraw.DrawLineBetween(GenThing.TrueCenter(Position, Rot4.North, def.size, def.Altitude), flakkerSpawners[i].TrueCenter(), SimpleColor.Red);
+                    }
+                }
+
+                List<Thing> marineSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MarineInscribed);
+                for (int i = marineSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (Position.DistanceTo(marineSpawners[i].Position) <= radius)
+                    {
+                        GenDraw.DrawLineBetween(GenThing.TrueCenter(Position, Rot4.North, def.size, def.Altitude), marineSpawners[i].TrueCenter(), SimpleColor.Red);
+                    }
+                }
+
+                List<Thing> cataphractSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_CataphractInscribed);
+                for (int i = cataphractSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (Position.DistanceTo(cataphractSpawners[i].Position) <= radius)
+                    {
+                        GenDraw.DrawLineBetween(GenThing.TrueCenter(Position, Rot4.North, def.size, def.Altitude), cataphractSpawners[i].TrueCenter(), SimpleColor.Red);
+                    }
+                }
             }
         }
 
@@ -255,7 +282,9 @@ namespace ArtificialBeings
                 return;
             }
 
-            if (Position.Roofed(Map) || (Position.GetRoom(Map) is Room room && !room.TouchesMapEdge))
+            // Only chemwalkers that have a natural effect radius should be affected by interior/exterior conditions.
+            float? radius = spawnerExtension.naturalRadius;
+            if (radius != null && (Position.Roofed(Map) || (Position.GetRoom(Map) is Room room && !room.TouchesMapEdge)))
             {
                 workFactor = 0.05f;
                 return;
@@ -288,7 +317,6 @@ namespace ArtificialBeings
                 }
             }
 
-            float? radius = spawnerExtension.naturalRadius;
             if (radius != null)
             {
                 int artificialThingsNearby = Map.listerArtificialBuildingsForMeditation.GetForCell(Position, (float)radius).Count;
@@ -320,6 +348,33 @@ namespace ArtificialBeings
                         workFactor -= 0.06f;
                     }
                 }
+
+                List<Thing> flakkerSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_FlakkerInscribed);
+                for (int i = flakkerSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (Position.DistanceTo(flakkerSpawners[i].Position) <= radius)
+                    {
+                        workFactor -= 0.04f;
+                    }
+                }
+
+                List<Thing> marineSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MarineInscribed);
+                for (int i = marineSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (Position.DistanceTo(marineSpawners[i].Position) <= radius)
+                    {
+                        workFactor -= 0.04f;
+                    }
+                }
+
+                List<Thing> cataphractSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_CataphractInscribed);
+                for (int i = cataphractSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (Position.DistanceTo(cataphractSpawners[i].Position) <= radius)
+                    {
+                        workFactor -= 0.08f;
+                    }
+                }
             }
             workFactor = Mathf.Clamp(workFactor, 0f, 10f);
         }
@@ -331,7 +386,7 @@ namespace ArtificialBeings
 
         public void ResetWorkRemaining()
         {
-            workRemaining = Rand.Range(spawnerExtension.baseTicksBetweenSpawns * 0.5f, spawnerExtension.baseTicksBetweenSpawns * 1.5f);
+            workRemaining = Rand.Range(spawnerExtension.baseTicksBetweenSpawns * 0.75f, spawnerExtension.baseTicksBetweenSpawns * 1.25f);
             readyForAttunement = false;
         }
     }

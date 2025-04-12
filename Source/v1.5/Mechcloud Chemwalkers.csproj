@@ -177,9 +177,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\Command_Psyop.cs" />
+    <Compile Include="Abilities\Psyop.cs" />
+    <Compile Include="Components\CompAbilityEffectProperties_RestoreParts.cs" />
     <Compile Include="Components\CompTargetable_SingleChemwalkerShell.cs" />
     <Compile Include="Components\CompTargetEffectProperties_JumpstartChemwalker.cs" />
     <Compile Include="Components\CompTargetEffect_JumpstartChemwalker.cs" />
+    <Compile Include="Components\CompAbilityEffect_RestoreParts.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_Mechcloud.cs" />
     <Compile Include="Extensions\ThingExtensions.cs" />
     <Compile Include="Harmony\ABF_Pawn_HealthTracker_Patch.cs" />
@@ -189,9 +193,11 @@
     <Compile Include="MechcloudChemwalkers.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_NaturalRadius.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recipes\Recipe_AwakenChemwalker.cs" />
     <Compile Include="Recipes\Recipe_AttuneWildArmor.cs" />
     <Compile Include="Recipes\Recipe_Kill.cs" />
     <Compile Include="Things\ABF_ArmorPawnSpawner.cs" />
+    <Compile Include="Verbs\Verb_CastPsyop.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

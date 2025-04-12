@@ -34,10 +34,10 @@
 							<name>skin</name>
 							<first Class="ColorGenerator_Options">
 								<options>
-									<li> <!--Gray-->
+									<li>
 										<weight>4</weight>
-										<min>RGBA(127, 127, 127, 255)</min>
-										<max>RGBA(127, 127, 127, 255)</max>
+										<min>RGBA(230, 230, 230, 255)</min>
+										<max>RGBA(230, 230, 230, 255)</max>
 									</li>
 								</options>
 							</first>
@@ -107,7 +107,8 @@
         </tools>
 		<race>
 			<body>ABF_Body_Chemwalker_Mechcloud</body>
-            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesMechcloud</nameGenerator>
+            <baseHealthScale>3</baseHealthScale>
+            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesMarine</nameGenerator>
             <deathAction>
                 <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
             </deathAction>

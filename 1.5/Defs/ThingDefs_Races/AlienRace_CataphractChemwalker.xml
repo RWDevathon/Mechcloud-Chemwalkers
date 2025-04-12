@@ -2,9 +2,9 @@
 <Defs>
 
 	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
-		<defName>ABF_Thing_Chemwalker_Flakker</defName>
-		<label>flak chemwalker</label>
-		<description>A flak jacket, pants, and helmet imprinted and imbued with psychic power animated by a cloud of chemfuel-consuming mechanites that dwell within the apparel as if using it as a shell. When not under the psychic command of a higher intelligence, flakker chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies are generally terrified by what they call "poltergeist warriors" due to the uncanny featureless mass of the mechanites that resembling a shifting gray shadow that is visible protruding from the flak armor.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence and call these particular entities "flakkers" due to the flak jacket they inhabit.\n\nIt is a mystery as to how the Mechcloud understands which part of the helmet should be facing forward - and why the Mechcloud chooses to hoist it so far above the jacket.</description>
+		<defName>ABF_Thing_Chemwalker_Cataphract</defName>
+		<label>cataphract chemwalker</label>
+		<description>A suit of intricately inscribed and psychically imbued cataphract armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, cataphract chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nGiven the full seal that these suits provide, few can tell that these chemwalkers are not people at first. The only giveaway is the quiet rattling of millions of mechanites coursing through the armor, which can easily be waved off as machinery within the suit. It only becomes clear that there is no one inside once the armor is removed and the mechanites escape - or when the chemwalker, which lacks the ability to speak, fails to communicate when expected.</description>
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -13,10 +13,10 @@
 			</raceRestriction>
 			<graphicPaths>
                 <body>
-                    <path>Things/Pawn/Humanlike/Apparel/FlakJacket/FlakJacket_Male</path>
+                    <path>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor_Male</path>
                 </body>
                 <head>
-                    <path>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet</path>
+                    <path>Things/Pawn/Humanlike/Apparel/CataphractArmorHelmet/CataphractHelmet</path>
                 </head>
                 <skinShader>Cutout</skinShader>
             </graphicPaths>
@@ -24,7 +24,7 @@
                 <alienPartGenerator>
 					<headBodyPartDef>ABF_BodyPart_Chemwalker_Helm</headBodyPartDef>
 					<headTypes Inherit="False">
-                        <li>ABF_HeadType_Chemwalker_AdvancedHelmet</li>
+                        <li>ABF_HeadType_Chemwalker_CataphractHelmet</li>
                     </headTypes>
                     <bodyTypes Inherit="False">
                         <li>Male</li>
@@ -34,10 +34,10 @@
 							<name>skin</name>
 							<first Class="ColorGenerator_Options">
 								<options>
-									<li> <!--Gray-->
+									<li>
 										<weight>4</weight>
-										<min>RGBA(127, 127, 127, 255)</min>
-										<max>RGBA(127, 127, 127, 255)</max>
+										<min>RGBA(230, 230, 230, 255)</min>
+										<max>RGBA(230, 230, 230, 255)</max>
 									</li>
 								</options>
 							</first>
@@ -56,17 +56,18 @@
             </generalSettings>
 		</alienRace>
 		<statBases>
-			<MarketValue>1400</MarketValue>
-			<MoveSpeed>5.20</MoveSpeed>
+			<MarketValue>2600</MarketValue>
+			<MoveSpeed>4.40</MoveSpeed>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<GlobalLearningFactor>0.1</GlobalLearningFactor>
-			<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+			<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
 			<SocialImpact>0.05</SocialImpact>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
-            <FilthRate>3</FilthRate>
-			<Mass>20</Mass>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <IncomingDamageFactor>0.7</IncomingDamageFactor>
+            <FilthRate>2</FilthRate>
+			<Mass>60</Mass>
 		</statBases>
         <tools>
             <li>
@@ -74,14 +75,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>3.2</power>
+                <power>12.2</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>14</amount>
+                            <amount>22</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -91,14 +92,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>3.2</power>
+                <power>12.2</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>14</amount>
+                            <amount>22</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -106,14 +107,14 @@
         </tools>
 		<race>
 			<body>ABF_Body_Chemwalker_Mechcloud</body>
-            <baseHealthScale>2</baseHealthScale>
-            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesFlakker</nameGenerator>
+            <baseHealthScale>4</baseHealthScale>
+            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesCataphract</nameGenerator>
             <deathAction>
                 <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
             </deathAction>
             <detritusLeavings>
                 <li>
-                    <def>ABF_Thing_Chemwalker_Shell_FlakkerDamaged</def>
+                    <def>ABF_Thing_Chemwalker_Shell_CataphractDamaged</def>
                     <texOverrideIndex>10</texOverrideIndex>
                     <spawnChance>1</spawnChance>
                 </li>
@@ -123,10 +124,10 @@
             <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
                 <canBeSapient>false</canBeSapient>
                 <canBeReprogrammable>false</canBeReprogrammable>
-                <droneSkillLevel>7</droneSkillLevel>
+                <droneSkillLevel>4</droneSkillLevel>
                 <inherentSkills>
-                    <li><key>Shooting</key><value>1</value></li>
-                    <li><key>Melee</key><value>1</value></li>
+                    <li><key>Shooting</key><value>12</value></li>
+                    <li><key>Melee</key><value>12</value></li>
                 </inherentSkills>
                 <blacklistedNeeds>
                     <li>DrugDesire</li>
@@ -142,13 +143,13 @@
                     <li>Indoors</li>
                 </blacklistedNeeds>
                 <artificialNeeds>
-                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>20</value></li>
+                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>80</value></li>
                 </artificialNeeds>
                 <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
             </li>
 		</modExtensions>
 		<butcherProducts>
-            <ABF_Thing_Chemwalker_Shell_FlakkerDamaged>1</ABF_Thing_Chemwalker_Shell_FlakkerDamaged>
+            <ABF_Thing_Chemwalker_Shell_CataphractDamaged>1</ABF_Thing_Chemwalker_Shell_CataphractDamaged>
 		</butcherProducts>
 	</AlienRace.ThingDef_AlienRace>
 

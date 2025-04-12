@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityDef Name="ABF_Ability_Chemwalker_PsyopBase" Abstract="True">
+        <abilityClass>ArtificialBeings.Psyop</abilityClass>
+        <category>Psychic</category>
+        <statBases>
+            <Ability_Duration>0</Ability_Duration>
+        </statBases>
+        <warmupSound>PsycastCastLoop</warmupSound>
+        <verbProperties>
+            <verbClass>ArtificialBeings.Verb_CastPsyop</verbClass>
+            <range>4.9</range>
+            <requireLineOfSight>True</requireLineOfSight>
+            <warmupTime>1</warmupTime>
+            <targetParams>
+                <canTargetSelf>True</canTargetSelf>
+                <canTargetBuildings>False</canTargetBuildings>
+                <canTargetAnimals>False</canTargetAnimals>
+                <thingCategory>Item</thingCategory>
+                <mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef ParentName="ABF_Ability_Chemwalker_PsyopBase">
+        <defName>ABF_Ability_Chemwalker_Mercy</defName>
+        <label>mercy</label>
+        <description>Channel accumulated psychic energy into the target chemwalker to force the target's shell to repair itself to functionality. The amount of entropy and psyfocus required depends on the severity of wounds that the target possesses, and will use as much as it can. This ability can restore missing parts.</description>
+        <iconPath>UI/Abilities/Painblock</iconPath>
+        <hotKey>Misc1</hotKey>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <statBases>
+            <Ability_EntropyGain>2</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
+        </statBases>
+        <comps>
+            <li Class="ArtificialBeings.CompAbilityEffectProperties_RestoreParts">
+                <compClass>ArtificialBeings.CompAbilityEffect_RestoreParts</compClass>
+                <psyfocusCostPerSeverity>0.005</psyfocusCostPerSeverity>
+                <entropyCostPerSeverity>0.2</entropyCostPerSeverity>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>PsycastPsychicEffect</fleckDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="ABF_Ability_Chemwalker_PsyopBase">
+        <defName>ABF_Ability_Chemwalker_Majesty</defName>
+        <label>majesty</label>
+        <description>Channel a massive wave of psychic energy into the target chemwalker, filling it with the majesty of its master's will in the face of those who would bring harm. Overflowing with might, the subject can shrug off incoming blows with impunity and deliver devastating attacks in return, but is so energized and destabilized that it becomes nearly impossible to perform work with any level of precision.</description>
+        <iconPath>UI/Abilities/Skip</iconPath>
+        <hotKey>Misc2</hotKey>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <statBases>
+            <Ability_EntropyGain>20</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.8</Ability_PsyfocusCost>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+              <compClass>CompAbilityEffect_GiveHediff</compClass>
+              <hediffDef>ABF_Hediff_Chemwalker_Psyop_Majesty</hediffDef>
+              <psychic>True</psychic>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>PsycastPsychicEffect</fleckDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-    <ABF_RoofPenalty>5% max: Is roofed</ABF_RoofPenalty>
+    <ABF_RoofPenalty>95% penalty: Is roofed</ABF_RoofPenalty>
     <ABF_BonusPerAnimaTree>{0}% bonus: 40% bonus per anima tree</ABF_BonusPerAnimaTree>
     <ABF_PenaltyPerMechcloudShell>{0}% penalty: 3% penalty per inscribed mechcloud shell</ABF_PenaltyPerMechcloudShell>
-    <ABF_PenaltyPerLumberingShell>{0}% penalty: 6% penalty per inscribed mechcloud shell</ABF_PenaltyPerLumberingShell>
+    <ABF_PenaltyPerLumberingShell>{0}% penalty: 6% penalty per inscribed lumbering shell</ABF_PenaltyPerLumberingShell>
+    <ABF_PenaltyPerFlakkerShell>{0}% penalty: 4% penalty per inscribed mechcloud shell</ABF_PenaltyPerFlakkerShell>
+    <ABF_PenaltyPerMarineShell>{0}% penalty: 5% penalty per inscribed marine shell</ABF_PenaltyPerMarineShell>
+    <ABF_PenaltyPerCataphractShell>{0}% penalty: 8% penalty per inscribed cataphract shell</ABF_PenaltyPerCataphractShell>
 	<ABF_PenaltyPerArtificial>{0}% penalty: 2% penalty per artificial entity</ABF_PenaltyPerArtificial>
+    <ABF_RequiresAwakening>{0} cannot be used until a surgical operation to psychically awaken {1} is completed</ABF_RequiresAwakening>
 
 </LanguageData>

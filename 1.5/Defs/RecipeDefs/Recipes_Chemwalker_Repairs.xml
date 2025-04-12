@@ -246,4 +246,125 @@
         <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
     </RecipeDef>
 
+    <RecipeDef>
+        <defName>ABF_Recipe_Chemwalker_RepairEltexShell</defName>
+        <label>salvage eltex chemwalker shell</label>
+        <description>Salvage what you can from eltex chemwalker wreckage to construct a new shell.</description>
+        <jobString>Repairing eltex shell.</jobString>
+        <workAmount>10000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <researchPrerequisites>
+            <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+            <li>ReconArmor</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ABF_Thing_Chemwalker_Shell_EltexDamaged</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+        </ingredients>
+        <products>
+            <ABF_Thing_Chemwalker_Shell_EltexInscribed>1</ABF_Thing_Chemwalker_Shell_EltexInscribed>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ABF_Thing_Chemwalker_Shell_EltexDamaged</li>
+                <li>Steel</li>
+                <li>Plasteel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>ABF_Recipe_Chemwalker_RepairCataphractShell</defName>
+        <label>salvage cataphract chemwalker shell</label>
+        <description>Salvage what you can from cataphract chemwalker wreckage to construct a new shell.</description>
+        <jobString>Repairing cataphract shell.</jobString>
+        <workAmount>20000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <researchPrerequisites>
+            <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+            <li>CataphractArmor</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ABF_Thing_Chemwalker_Shell_CataphractDamaged</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>240</count>
+            </li>
+        </ingredients>
+        <products>
+            <ABF_Thing_Chemwalker_Shell_CataphractInscribed>1</ABF_Thing_Chemwalker_Shell_CataphractInscribed>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ABF_Thing_Chemwalker_Shell_CataphractDamaged</li>
+                <li>Plasteel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
+    </RecipeDef>
+
 </Defs>

@@ -2,6 +2,7 @@
 <LanguageData>
 
     <ABF_RequiresPsychicPowers>{0} must have a psylink and psychic capability.</ABF_RequiresPsychicPowers>
+    <ABF_AlreadyAwakened>{0} already has a psylink and psychic capability.</ABF_AlreadyAwakened>
     <ABF_MechcloudAttuned>{0} has attuned to a newly loyal chemwalker.</ABF_MechcloudAttuned>
 
 </LanguageData>

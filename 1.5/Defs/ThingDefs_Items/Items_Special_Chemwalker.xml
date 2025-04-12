@@ -183,4 +183,79 @@
         </modExtensions>
     </ThingDef>
 
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_EltexInscribed</defName>
+        <label>inscribed eltex chemwalker shell</label>
+        <description>This pile of recon armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Eltex shells, unlike most other chemwalkers, do not require access to open space - the eltex embedded into the armor serves as a beacon that draws mechanites regardless of surroundings. Curiously, this also means that other such beacons of power, such as an anima tree, do not accelerate the process. Soon, this pile of plasteel, components, and eltex may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <fillPercent>0.25</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>20</Mass>
+            <Beauty>3</Beauty>
+            <WorkToMake>28000</WorkToMake>
+        </statBases>
+        <costList>
+            <Chemfuel>200</Chemfuel>
+            <Apparel_ArmorHelmetReconPrestige>1</Apparel_ArmorHelmetReconPrestige>
+            <Apparel_ArmorReconPrestige>1</Apparel_ArmorReconPrestige>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+                <li>ReconArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="ArtificialBeings.ABF_PawnSpawnerExtension">
+                <pawnToSpawnSuccess>ABF_PawnKind_Chemwalker_Player_Eltex</pawnToSpawnSuccess>
+                <pawnToSpawnFailure>ABF_PawnKind_Chemwalker_None_Eltex</pawnToSpawnFailure>
+                <baseTicksBetweenSpawns>1200000</baseTicksBetweenSpawns>
+                <destroyOnSpawn>True</destroyOnSpawn>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_CataphractInscribed</defName>
+        <label>inscribed cataphract chemwalker shell</label>
+        <description>This pile of cataphract armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of plasteel and components may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <fillPercent>0.25</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Mass>40</Mass>
+            <Beauty>3</Beauty>
+            <WorkToMake>40000</WorkToMake>
+        </statBases>
+        <costList>
+            <Chemfuel>400</Chemfuel>
+            <Apparel_ArmorHelmetCataphract>1</Apparel_ArmorHelmetCataphract>
+            <Apparel_ArmorCataphract>1</Apparel_ArmorCataphract>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+                <li>CataphractArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="ArtificialBeings.ABF_PawnSpawnerExtension">
+                <pawnToSpawnSuccess>ABF_PawnKind_Chemwalker_Player_Cataphract</pawnToSpawnSuccess>
+                <pawnToSpawnFailure>ABF_PawnKind_Chemwalker_None_Cataphract</pawnToSpawnFailure>
+                <baseTicksBetweenSpawns>3600000</baseTicksBetweenSpawns>
+                <naturalRadius>21.9</naturalRadius>
+                <destroyOnSpawn>True</destroyOnSpawn>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
 </Defs>

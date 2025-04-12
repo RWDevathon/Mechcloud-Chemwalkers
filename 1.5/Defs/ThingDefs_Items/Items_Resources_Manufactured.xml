@@ -160,6 +160,48 @@
         </statBases>
     </ThingDef>
 
+    <ThingDef ParentName="ResourceBase">
+        <defName>ABF_Thing_Chemwalker_Shell_EltexDamaged</defName>
+        <label>eltex chemwalker wreckage</label>
+        <description>This pile of battered and broken recon armor - little more than scrap - is all but devoid of the sigils and mechanites that once kept it animated. With repairs and sufficient time, though, this pile of metal may yet once again serve its original cause - or perhaps the cause of a new master?</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <thingCategories>
+            <li>ABF_ThingCategory_Chemwalker_Shells</li>
+        </thingCategories>
+        <techLevel>Spacer</techLevel>
+        <stackLimit>1</stackLimit>
+        <statBases>
+            <MarketValue>400</MarketValue>
+            <Mass>20</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ABF_Thing_Chemwalker_Shell_CataphractDamaged</defName>
+        <label>cataphract chemwalker wreckage</label>
+        <description>This pile of battered and broken cataphract armor - little more than scrap - is all but devoid of the sigils and mechanites that once kept it animated. With repairs and sufficient time, though, this pile of metal may yet once again serve its original cause - or perhaps the cause of a new master?</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <thingCategories>
+            <li>ABF_ThingCategory_Chemwalker_Shells</li>
+        </thingCategories>
+        <techLevel>Spacer</techLevel>
+        <stackLimit>1</stackLimit>
+        <statBases>
+            <MarketValue>400</MarketValue>
+            <Mass>20</Mass>
+        </statBases>
+    </ThingDef>
+
     <!-- Chemwalker Infusions -->
 
     <ThingDef ParentName="ResourceBase">

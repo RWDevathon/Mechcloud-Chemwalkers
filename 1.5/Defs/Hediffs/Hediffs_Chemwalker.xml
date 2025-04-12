@@ -3,7 +3,7 @@
 
     <HediffDef>
         <defName>ABF_Hediff_Chemwalker_ChemfuelShortage</defName>
-        <label>Chemfuel shortage</label>
+        <label>chemfuel shortage</label>
         <description>This unit has insufficient chemfuel to operate and is rapidly losing the ability to function.\n\nShould it not be replenished soon, the unit will perish!</description>
         <maxSeverity>1</maxSeverity>
         <lethalSeverity>1</lethalSeverity>
@@ -36,6 +36,47 @@
                     <li>
                         <capacity>Consciousness</capacity>
                         <setMax>0.4</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defName>ABF_Hediff_Chemwalker_Psyop_Majesty</defName>
+        <label>majesty</label>
+        <description>Imbued with psychic power to bring the master's will upon their enemies, this chemwalker can shrug off incoming blows and retaliate with devastating attacks. The sheer amount of energy flowing through it destabilizes it, preventing it from completing work tasks with any degree of precision.</description>
+        <initialSeverity>0.5</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.0</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <IncomingDamageFactor>0.6</IncomingDamageFactor>
+                    <MeleeDamageFactor>2</MeleeDamageFactor>
+                    <MeleeArmorPenetration>2</MeleeArmorPenetration>
+                    <MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+                    <MeleeDodgeChance>2</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+                    <AimingDelayFactor>0.5</AimingDelayFactor>
+                    <MortarMissRadiusFactor>0.5</MortarMissRadiusFactor>
+                    <RangedCooldownFactor>0.75</RangedCooldownFactor>
+                    <StaggerDurationFactor>0</StaggerDurationFactor>
+                    <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.5</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.5</offset>
                     </li>
                 </capMods>
             </li>

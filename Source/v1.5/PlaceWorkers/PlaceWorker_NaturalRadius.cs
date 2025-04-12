@@ -41,6 +41,33 @@ namespace ArtificialBeings
                         GenDraw.DrawLineBetween(GenThing.TrueCenter(center, Rot4.North, def.size, def.Altitude), lumberingSpawners[i].TrueCenter(), SimpleColor.Red);
                     }
                 }
+
+                List<Thing> flakkerSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_FlakkerInscribed);
+                for (int i = flakkerSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (center.DistanceTo(flakkerSpawners[i].Position) <= radius)
+                    {
+                        GenDraw.DrawLineBetween(GenThing.TrueCenter(center, Rot4.North, def.size, def.Altitude), flakkerSpawners[i].TrueCenter(), SimpleColor.Red);
+                    }
+                }
+
+                List<Thing> marineSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MarineInscribed);
+                for (int i = marineSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (center.DistanceTo(marineSpawners[i].Position) <= radius)
+                    {
+                        GenDraw.DrawLineBetween(GenThing.TrueCenter(center, Rot4.North, def.size, def.Altitude), marineSpawners[i].TrueCenter(), SimpleColor.Red);
+                    }
+                }
+
+                List<Thing> cataphractSpawners = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_CataphractInscribed);
+                for (int i = cataphractSpawners.Count - 1; i >= 0; i--)
+                {
+                    if (center.DistanceTo(cataphractSpawners[i].Position) <= radius)
+                    {
+                        GenDraw.DrawLineBetween(GenThing.TrueCenter(center, Rot4.North, def.size, def.Altitude), cataphractSpawners[i].TrueCenter(), SimpleColor.Red);
+                    }
+                }
             }
         }
 
@@ -129,6 +156,75 @@ namespace ArtificialBeings
                     Text.Anchor = TextAnchor.MiddleLeft;
                     GUI.color = Color.red;
                     Widgets.Label(lumberingShellWarningRect, lumberingShellWarningText);
+                    Text.Anchor = TextAnchor.UpperLeft;
+                    GUI.color = Color.white;
+                    curY += Text.LineHeight + Text.SpaceBetweenLines;
+                }
+
+                // 4% penalty per inscribed flakker shell
+                List<Thing> flakkerShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_FlakkerInscribed);
+                int flakkerShellsInRange = 0;
+                for (int i = flakkerShells.Count - 1; i >= 0; i--)
+                {
+                    if (center.DistanceTo(flakkerShells[i].Position) < radius)
+                    {
+                        flakkerShellsInRange++;
+                    }
+                }
+                if (flakkerShellsInRange > 0)
+                {
+                    Rect flakkerShellWarningRect = new Rect(curX, curY, 999f, Text.LineHeight);
+                    string flakkerShellWarningText = "ABF_PenaltyPerFlakkerShell".Translate(flakkerShellsInRange * 4);
+                    Text.Font = GameFont.Small;
+                    Text.Anchor = TextAnchor.MiddleLeft;
+                    GUI.color = Color.red;
+                    Widgets.Label(flakkerShellWarningRect, flakkerShellWarningText);
+                    Text.Anchor = TextAnchor.UpperLeft;
+                    GUI.color = Color.white;
+                    curY += Text.LineHeight + Text.SpaceBetweenLines;
+                }
+
+                // 5% penalty per inscribed marine shell
+                List<Thing> marineShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MarineInscribed);
+                int marineShellsInRange = 0;
+                for (int i = marineShells.Count - 1; i >= 0; i--)
+                {
+                    if (center.DistanceTo(marineShells[i].Position) < radius)
+                    {
+                        marineShellsInRange++;
+                    }
+                }
+                if (marineShellsInRange > 0)
+                {
+                    Rect marineShellWarningRect = new Rect(curX, curY, 999f, Text.LineHeight);
+                    string marineShellWarningText = "ABF_PenaltyPerMarineShell".Translate(marineShellsInRange * 5);
+                    Text.Font = GameFont.Small;
+                    Text.Anchor = TextAnchor.MiddleLeft;
+                    GUI.color = Color.red;
+                    Widgets.Label(marineShellWarningRect, marineShellWarningText);
+                    Text.Anchor = TextAnchor.UpperLeft;
+                    GUI.color = Color.white;
+                    curY += Text.LineHeight + Text.SpaceBetweenLines;
+                }
+
+                // 8% penalty per inscribed cataphract shell
+                List<Thing> cataphractShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_CataphractInscribed);
+                int cataphractShellsInRange = 0;
+                for (int i = cataphractShells.Count - 1; i >= 0; i--)
+                {
+                    if (center.DistanceTo(cataphractShells[i].Position) < radius)
+                    {
+                        cataphractShellsInRange++;
+                    }
+                }
+                if (cataphractShellsInRange > 0)
+                {
+                    Rect cataphractShellWarningRect = new Rect(curX, curY, 999f, Text.LineHeight);
+                    string cataphractShellWarningText = "ABF_PenaltyPerCataphractShell".Translate(cataphractShellsInRange * 5);
+                    Text.Font = GameFont.Small;
+                    Text.Anchor = TextAnchor.MiddleLeft;
+                    GUI.color = Color.red;
+                    Widgets.Label(cataphractShellWarningRect, cataphractShellWarningText);
                     Text.Anchor = TextAnchor.UpperLeft;
                     GUI.color = Color.white;
                     curY += Text.LineHeight + Text.SpaceBetweenLines;

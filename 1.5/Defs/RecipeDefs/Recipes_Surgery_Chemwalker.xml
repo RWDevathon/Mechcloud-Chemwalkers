@@ -12,6 +12,10 @@
         <recipeUsers>
             <li>ABF_Thing_Chemwalker_Mechcloud</li>
             <li>ABF_Thing_Chemwalker_Lumbering</li>
+            <li>ABF_Thing_Chemwalker_Flakker</li>
+            <li>ABF_Thing_Chemwalker_Marine</li>
+            <li>ABF_Thing_Chemwalker_Eltex</li>
+            <li>ABF_Thing_Chemwalker_Cataphract</li>
         </recipeUsers>
     </RecipeDef>
 
@@ -40,6 +44,22 @@
 		<hideBodyPartNames>true</hideBodyPartNames>
         <isViolation>false</isViolation>
 		<targetsBodyPart>false</targetsBodyPart>
+	</RecipeDef>
+
+	<!-- Surgery to awaken psychic powers in an Eltex chemwalker -->
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_SurgeryBase">
+		<defName>ABF_Recipe_Chemwalker_AwakenChemwalker</defName>
+		<label>awaken latent psychic power</label>
+		<description>Eltex chemwalkers, courtesy of the eltex weaved into their armor, have the ability to utilize psychic powers - if properly awakened. Unlike organics, the Ultratech mechanites that inhabit the armor do not require a physical device like a neuroformer or a connection to an anima tree in order to awaken this power.\n\nUpon completion of this operation, eltex chemwalkers gain a level one psylink and access to their unique abilities.</description>
+		<workerClass>ArtificialBeings.Recipe_AwakenChemwalker</workerClass>
+		<jobString>Awakening eltex chemwalker.</jobString>
+		<workAmount>800</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+        <isViolation>false</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+        <recipeUsers inherit="False">
+            <li>ABF_Thing_Chemwalker_Eltex</li>
+        </recipeUsers>
 	</RecipeDef>
 
     <!-- Injecting chemfuel into a chemwalker -->

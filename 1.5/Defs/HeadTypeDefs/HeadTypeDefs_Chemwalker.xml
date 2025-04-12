@@ -31,4 +31,16 @@
         <gender>None</gender>
     </HeadTypeDef>
 
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_ReconArmorHelmet</defName>
+        <graphicPath>Things/Pawn/Humanlike/Apparel/PrestigeReconHelmet/PrestigeReconHelmet_Male_Average_Normal</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_CataphractHelmet</defName>
+        <graphicPath>Things/Pawn/Humanlike/Apparel/CataphractArmorHelmet/CataphractHelmet_Male_Average_Normal</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
 </Defs>
