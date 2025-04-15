@@ -49,7 +49,7 @@
     <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
         <defName>ABF_Thing_Chemwalker_Shell_MechcloudInscribed</defName>
         <label>inscribed mechcloud chemwalker shell</label>
-        <description>This pile of armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of steel and silver may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <description>This pile of armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time (or just a few healthy dosages of mechanite infusions), mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of steel and silver may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
         <graphicData>
             <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -79,7 +79,7 @@
     <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
         <defName>ABF_Thing_Chemwalker_Shell_LumberingInscribed</defName>
         <label>inscribed lumbering chemwalker shell</label>
-        <description>This massive pile of superheavy armor - meticulously inscribed - is ready to attract and retain the colossal swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this mountain of uranium, jade, gold, and steel may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <description>This massive pile of superheavy armor - meticulously inscribed - is ready to attract and retain the colossal swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time (or just a few healthy dosages of mechanite infusions), mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this mountain of uranium, jade, gold, and steel may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
         <graphicData>
             <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -109,7 +109,7 @@
     <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
         <defName>ABF_Thing_Chemwalker_Shell_FlakkerInscribed</defName>
         <label>inscribed flakker chemwalker shell</label>
-        <description>This pile of flak armor - plus a helmet - has been meticulously imprinted with psychic sigils and is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this unassuming armor may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <description>This pile of flak armor - plus a helmet - has been meticulously imprinted with psychic sigils and is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time (or just a few healthy dosages of mechanite infusions), mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this unassuming armor may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
         <graphicData>
             <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -148,7 +148,7 @@
     <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
         <defName>ABF_Thing_Chemwalker_Shell_MarineInscribed</defName>
         <label>inscribed marine chemwalker shell</label>
-        <description>This pile of power armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of plasteel and components may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <description>This pile of power armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time (or just a few healthy dosages of mechanite infusions), mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of plasteel and components may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
         <graphicData>
             <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -186,7 +186,7 @@
     <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
         <defName>ABF_Thing_Chemwalker_Shell_EltexInscribed</defName>
         <label>inscribed eltex chemwalker shell</label>
-        <description>This pile of recon armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Eltex shells, unlike most other chemwalkers, do not require access to open space - the eltex embedded into the armor serves as a beacon that draws mechanites regardless of surroundings. Curiously, this also means that other such beacons of power, such as an anima tree, do not accelerate the process. Soon, this pile of plasteel, components, and eltex may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <description>This pile of recon armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Eltex shells, unlike most other chemwalkers, do not require access to open space - the eltex embedded into the armor serves as a beacon that draws mechanites regardless of surroundings. Curiously, this also means that other such beacons of power, such as an anima tree, do not accelerate the process (although mechanite infusions are still fully effective). Soon, this pile of plasteel, components, and eltex may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
         <graphicData>
             <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -223,7 +223,7 @@
     <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_InscribedBase">
         <defName>ABF_Thing_Chemwalker_Shell_CataphractInscribed</defName>
         <label>inscribed cataphract chemwalker shell</label>
-        <description>This pile of cataphract armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time, mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of plasteel and components may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
+        <description>This pile of cataphract armor - meticulously inscribed - is ready to attract and retain the swarm of mechanites that will one day animate it. Given an open space - ideally near a place of psychic power that it can siphon from - and time (or just a few healthy dosages of mechanite infusions), mechanites will be drawn to it until it reaches a critical mass, ready for commands from a psychically attuned individual. Soon, this pile of plasteel and components may serve a great cause - or perhaps it already did and is soon to serve again?\n\nMoving or disturbing the armor prematurely will disperse the accumulated mechanites, forcing the process to restart.</description>
         <graphicData>
             <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
