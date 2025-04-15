@@ -14,7 +14,7 @@
             <li Class="ArtificialBeings.ABF_ArtificialNeedExtension">
                 <hediffToApplyOnEmpty>ABF_Hediff_Chemwalker_ChemfuelShortage</hediffToApplyOnEmpty>
                 <hediffRisePerDay>1</hediffRisePerDay>
-                <hediffFallPerDay>0.25</hediffFallPerDay>
+                <hediffFallPerDay>1</hediffFallPerDay>
             </li>
         </modExtensions>
     </NeedDef>
