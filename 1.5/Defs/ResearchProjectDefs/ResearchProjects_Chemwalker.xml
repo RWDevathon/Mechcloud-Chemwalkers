@@ -4,7 +4,7 @@
     <ResearchProjectDef >
 		<defName>ABF_ResearchProject_Chemwalker_MechcloudBasics</defName>
 		<label>mechcloud chemwalkers</label>
-        <description>Craft suits of armor at a fueled smithy, inscribe them with runes at an art bench, and allow them to accumulate power to raise eternally loyal servants.</description>
+        <description>Craft suits of armor, inscribe them with psychic sigils, and raise eternally loyal servants through the use of psychic domination.</description>
         <baseCost>500</baseCost>
         <techLevel>Medieval</techLevel>
         <techprintCount>2</techprintCount>
@@ -20,7 +20,7 @@
 		<researchViewX>3</researchViewX>
 		<researchViewY>4.25</researchViewY>
         <discoveredLetterTitle>About: Mechcloud Chemwalkers</discoveredLetterTitle>
-        <discoveredLetterText>You now have the knowledge necessary to create suits of armor that can be animated and imbued with power to serve you - but it requires several steps to get started. There are four steps to bringing a mechcloud chemwalker to animate existence:\n- Crafting the suit of armor at a fueled smithy.\n- Inscribing the armor with sigils of power at an art bench.\n- Allowing the armor to accumulate mechanites from the environment - ideally nearby an anima tree and away from artificial structures that may lure mechanites elsewhere.\n- Attuning the empowered armor to the will of a psycaster who will command it to serve for all time.</discoveredLetterText>
+        <discoveredLetterText>You now have the knowledge necessary to raise eternally loyal servants from mere suits of armor - but it requires several steps to get started:\n1. Craft the suit of armor (or "shell") itself - ranging from simple medieval plate at a fueled smithy or cataphract armor at a fabrication bench.\n- Inscribe the armor with sigils of power at an art bench for simpler articles, or using sophisticated machinery from a fabrication bench for higher grade armor.\n- Allow the armor to accumulate mechanites, the time and conditions of which is dependent on the suit of armor. Higher grade armor generally requires more time.\n  - Most armor requires open space, ideally near a place of psychic power like an anima tree, to attract mechanites slowly. Some armor, such as the prestige recon armor that eltex chemwalkers inhabit, are beacons in themselves and do not affect nor are affected by their environmental conditions.\n  - The process can be hastened (or outright skipped if sufficiently supplied) by injecting mechanite infusions directly into the inscribed shell. These infusions can be produced at the drug lab from the mechanites contained in luciferium or in resurrector serum. While expensive, it is entirely safe for the chemwalkers.\n- Attune the empowered armor to the will of a psycaster who will gain control of its service for all time.</discoveredLetterText>
     </ResearchProjectDef>
 
 </Defs>
