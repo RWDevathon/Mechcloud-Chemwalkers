@@ -13,4 +13,14 @@
         </value>
     </Operation>
 
+    <!-- Give chemfuel a ThingComp which will provide the float menu options for forcing consumption -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]/comps</xpath>
+        <value>
+            <li>
+                <compClass>ArtificialBeings.CompArtificialNeedFulfiller</compClass>
+            </li>
+        </value>
+    </Operation>
+
 </Patch>
