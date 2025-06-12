@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Childhood -->
+	<BackstoryDef>
+		<defName>ABF_Backstory_Chemwalker_Childhood_Basic</defName>
+		<title>Chemwalker</title>
+		<titleShort>Drone</titleShort>
+		<baseDesc>{PAWN_nameDef} is a non-sapient cloud of mechanites in a suit of armor. Such a thing has no childhood.</baseDesc>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>ABF_SpawnCategory_Chemwalker_Basic</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Animals</li>
+            <li>Social</li>
+            <li>Intellectual</li>
+		</workDisables>
+	</BackstoryDef>
+
+    <!-- Adulthood -->
+	<BackstoryDef>
+		<defName>ABF_Backstory_Chemwalker_Adulthood_Basic</defName>
+		<title>Chemwalker</title>
+		<titleShort>Drone</titleShort>
+		<baseDesc>{PAWN_nameDef} is a non-sapient cloud of mechanites in a suit of armor. Such a thing has no history.</baseDesc>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>ABF_SpawnCategory_Chemwalker_Basic</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Animals</li>
+            <li>Social</li>
+            <li>Intellectual</li>
+		</workDisables>
+	</BackstoryDef>
+
+</Defs>

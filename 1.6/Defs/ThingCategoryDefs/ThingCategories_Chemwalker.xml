@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingCategoryDef>
+        <defName>ABF_ThingCategory_Chemwalker_Shells</defName>
+        <label>chemwalker shells</label>
+        <parent>Manufactured</parent>
+        <iconPath>Things/Item/Unfinished/UnfinishedTechArmor</iconPath>
+    </ThingCategoryDef>
+
+</Defs>

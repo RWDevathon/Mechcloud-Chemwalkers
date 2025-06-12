@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Ensure that chemfuel actually can fulfill the chemfuel need -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]</xpath>
+        <value>
+            <li Class="ArtificialBeings.ABF_NeedFulfillerExtension">
+                <needOffsetRelations>
+                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>1</value></li>
+                </needOffsetRelations>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Give chemfuel a ThingComp which will provide the float menu options for forcing consumption -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]/comps</xpath>
+        <value>
+            <li>
+                <compClass>ArtificialBeings.CompArtificialNeedFulfiller</compClass>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

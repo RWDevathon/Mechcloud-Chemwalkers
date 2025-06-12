@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RulePackDef>
+        <defName>ABF_RulePack_Chemwalker_ShellArtDescription</defName>
+        <rulePack>
+        <rulesStrings>
+            <li>physical_description_root->This suit's [single_piece] has an inscribed [depiction] of [image]. [desc_sentence_group]</li>
+            <li>physical_description_root->This suit's [single_piece] bears a [depiction] of [image]. [desc_sentence_group]</li>
+            <li>physical_description_root->On this suit's [single_piece] is a [depiction] of [image]. [desc_sentence_group]</li>
+            <li>physical_description_root->This suit's [multiple_pieces] share an inscription that [depicts] [image]. [desc_sentence_group]</li>
+            <li>physical_description_root->This suit's [multiple_pieces] both bear a [depiction] of [image]. [desc_sentence_group]</li>
+            <li>single_piece->cuirass</li>
+            <li>single_piece->fauld</li>
+            <li>single_piece->helm</li>
+            <li>multiple_pieces->pauldrons</li>
+            <li>multiple_pieces->rerebraces</li>
+            <li>multiple_pieces->vambraces</li>
+            <li>multiple_pieces->gauntlets</li>
+            <li>multiple_pieces->cuisses</li>
+            <li>multiple_pieces->greaves</li>
+        </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

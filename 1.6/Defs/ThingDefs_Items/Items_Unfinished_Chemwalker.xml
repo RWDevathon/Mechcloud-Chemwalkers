@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_Unfinished</defName>
+        <label>unfinished chemwalker shell</label>
+        <description>An unfinished chemwalker shell.</description>
+        <statBases>
+            <Flammability>0</Flammability>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories Inherit="false" />
+    </ThingDef>
+
+</Defs>

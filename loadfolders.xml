@@ -7,4 +7,11 @@
         <li IfModActive="OskarPotocki.VFE.Pirates">Compatibility/1.5/VFEP</li>
         <li IfModActive="Killathon.ArtificialBeings.SynCore">Compatibility/1.5/ABFSC</li>
     </v1.5>
+    <v1.6>
+        <li>/</li>
+        <li>1.6</li>
+        <li>Common</li>
+        <li IfModActive="OskarPotocki.VFE.Pirates">Compatibility/1.6/VFEP</li>
+        <li IfModActive="Killathon.ArtificialBeings.SynCore">Compatibility/1.6/ABFSC</li>
+    </v1.6>
 </loadFolders>

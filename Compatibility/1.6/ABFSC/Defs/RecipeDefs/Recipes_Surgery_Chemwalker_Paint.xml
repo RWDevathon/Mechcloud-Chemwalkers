@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Surgery to paint a chemwalker -->
+	<RecipeDef ParentName="ABF_Recipe_Chemwalker_SurgeryBase">
+		<defName>ABF_Recipe_Chemwalker_Paint</defName>
+		<label>paint chemwalker</label>
+		<description>Repaints the chemwalker's armor.</description>
+		<workerClass>ArtificialBeings.Recipe_PaintUnit</workerClass>
+        <targetsBodyPart>false</targetsBodyPart>
+		<jobString>Painting chemwalker.</jobString>
+		<workAmount>200</workAmount>
+	</RecipeDef>
+
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <JobDef>
+        <defName>ABF_Job_Chemwalker_AttuneToArmor</defName>
+        <driverClass>ArtificialBeings.JobDriver_AttuneToArmor</driverClass>
+        <reportString>Attuning to armor.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>ABF_Job_Chemwalker_PackUpArmor</defName>
+        <driverClass>ArtificialBeings.JobDriver_PackUpArmor</driverClass>
+        <reportString>Packing up armor.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>ABF_Job_Chemwalker_JumpstartChemwalker</defName>
+        <driverClass>ArtificialBeings.JobDriver_JumpstartChemwalker</driverClass>
+        <reportString>jumpstarting TargetA.</reportString>
+    </JobDef>
+
+</Defs>

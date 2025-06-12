@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
+		<defName>ABF_Thing_Chemwalker_Cataphract</defName>
+		<label>cataphract chemwalker</label>
+		<description>A suit of intricately inscribed and psychically imbued cataphract armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, cataphract chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nGiven the full seal that these suits provide, few can tell that these chemwalkers are not people at first. The only giveaway is the quiet rattling of millions of mechanites coursing through the armor, which can easily be waved off as machinery within the suit. It only becomes clear that there is no one inside once the armor is removed and the mechanites escape - or when the chemwalker, which lacks the ability to speak, fails to communicate when expected.</description>
+		<alienRace>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+				</apparelList>
+			</raceRestriction>
+			<graphicPaths>
+                <body>
+                    <path>Things/Pawn/Humanlike/Apparel/CataphractArmor/CataphractArmor_Male</path>
+                </body>
+                <head>
+                    <path>Things/Pawn/Humanlike/Apparel/CataphractArmorHelmet/CataphractHelmet</path>
+                </head>
+                <skinShader>Cutout</skinShader>
+            </graphicPaths>
+            <generalSettings>
+                <alienPartGenerator>
+					<headBodyPartDef>ABF_BodyPart_Chemwalker_Helm</headBodyPartDef>
+					<headTypes Inherit="False">
+                        <li>ABF_HeadType_Chemwalker_CataphractHelmet</li>
+                    </headTypes>
+                    <bodyTypes Inherit="False">
+                        <li>Male</li>
+                    </bodyTypes>
+                    <colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>4</weight>
+										<min>RGBA(230, 230, 230, 255)</min>
+										<max>RGBA(230, 230, 230, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<min>RGBA(255, 255, 255, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+                </alienPartGenerator>
+            </generalSettings>
+		</alienRace>
+		<statBases>
+			<MarketValue>2600</MarketValue>
+			<MoveSpeed>4.40</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<GlobalLearningFactor>0.1</GlobalLearningFactor>
+			<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+			<SocialImpact>0.05</SocialImpact>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <IncomingDamageFactor>0.7</IncomingDamageFactor>
+            <FilthRate>2</FilthRate>
+			<Mass>60</Mass>
+		</statBases>
+        <tools>
+            <li>
+                <label>left fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12.2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>22</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12.2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>22</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+		<race>
+			<body>ABF_Body_Chemwalker_Mechcloud</body>
+            <baseHealthScale>4</baseHealthScale>
+            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesCataphract</nameGenerator>
+            <deathAction>
+                <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
+            </deathAction>
+            <detritusLeavings>
+                <li>
+                    <def>ABF_Thing_Chemwalker_Shell_CataphractDamaged</def>
+                    <texOverrideIndex>10</texOverrideIndex>
+                    <spawnChance>1</spawnChance>
+                </li>
+            </detritusLeavings>
+		</race>
+		<modExtensions>
+            <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+                <canBeReprogrammable>false</canBeReprogrammable>
+                <droneSkillLevel>4</droneSkillLevel>
+                <inherentSkills>
+                    <li><key>Shooting</key><value>12</value></li>
+                    <li><key>Melee</key><value>12</value></li>
+                </inherentSkills>
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+                    <li>Mood</li>
+                    <li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>80</value></li>
+                </artificialNeeds>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+            </li>
+		</modExtensions>
+		<butcherProducts>
+            <ABF_Thing_Chemwalker_Shell_CataphractDamaged>1</ABF_Thing_Chemwalker_Shell_CataphractDamaged>
+		</butcherProducts>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

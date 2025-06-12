@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef>
+        <defName>ABF_Recipe_Chemwalker_MakeMechaniteInfusionFromLuciferium</defName>
+        <label>prepare mechanite infusion from luciferium</label>
+        <description>Luciferium is rich in functional mechanites. While intended for organic consumption, they can instead be carefully prepared to jumpstart the initialization of chemwalkers with a bit of chemfuel.</description>
+        <jobString>preparing mechanite infusion.</jobString>
+        <workAmount>6000</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <researchPrerequisite>ABF_ResearchProject_Chemwalker_MechcloudBasics</researchPrerequisite>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Luciferium</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <products>
+            <ABF_Thing_Chemwalker_MechaniteInfusion>5</ABF_Thing_Chemwalker_MechaniteInfusion>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Luciferium</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>ABF_Recipe_Chemwalker_MakeMechaniteInfusionFromSerumResurrector</defName>
+        <label>prepare mechanite infusion from resurrector mech serum</label>
+        <description>Mech serums, as a rule, are rich in functional mechanites. Those which are intended to resurrect organics can instead be broken down and reprocessed to jumpstart a vast quantity of chemwalkers.</description>
+        <jobString>preparing mechanite infusion.</jobString>
+        <workAmount>6000</workAmount>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <researchPrerequisite>ABF_ResearchProject_Chemwalker_MechcloudBasics</researchPrerequisite>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MechSerumResurrector</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <ABF_Thing_Chemwalker_MechaniteInfusion>40</ABF_Thing_Chemwalker_MechaniteInfusion>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>MechSerumResurrector</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+</Defs>

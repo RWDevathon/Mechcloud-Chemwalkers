@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
+		<defName>ABF_Thing_Chemwalker_Flakker</defName>
+		<label>flak chemwalker</label>
+		<description>A flak jacket, pants, and helmet imprinted and imbued with psychic power animated by a cloud of chemfuel-consuming mechanites that dwell within the apparel as if using it as a shell. When not under the psychic command of a higher intelligence, flakker chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies are generally terrified by what they call "poltergeist warriors" due to the uncanny featureless mass of the mechanites that resembling a shifting gray shadow that is visible protruding from the flak armor.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence and call these particular entities "flakkers" due to the flak jacket they inhabit.\n\nIt is a mystery as to how the Mechcloud understands which part of the helmet should be facing forward - and why the Mechcloud chooses to hoist it so far above the jacket.</description>
+		<alienRace>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+				<apparelList>
+				</apparelList>
+			</raceRestriction>
+			<graphicPaths>
+                <body>
+                    <path>Things/Pawn/Humanlike/Apparel/FlakJacket/FlakJacket_Male</path>
+                </body>
+                <head>
+                    <path>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet</path>
+                </head>
+                <skinShader>Cutout</skinShader>
+            </graphicPaths>
+            <generalSettings>
+                <alienPartGenerator>
+					<headBodyPartDef>ABF_BodyPart_Chemwalker_Helm</headBodyPartDef>
+					<headTypes Inherit="False">
+                        <li>ABF_HeadType_Chemwalker_AdvancedHelmet</li>
+                    </headTypes>
+                    <bodyTypes Inherit="False">
+                        <li>Male</li>
+                    </bodyTypes>
+                    <colorChannels Inherit="False">
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li> <!--Gray-->
+										<weight>4</weight>
+										<min>RGBA(127, 127, 127, 255)</min>
+										<max>RGBA(127, 127, 127, 255)</max>
+									</li>
+								</options>
+							</first>
+							<second Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<min>RGBA(255, 255, 255, 255)</min>
+										<max>RGBA(255, 255, 255, 255)</max>
+									</li>
+								</options>
+							</second>
+						</li>
+					</colorChannels>
+                </alienPartGenerator>
+            </generalSettings>
+		</alienRace>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<MoveSpeed>5.20</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<GlobalLearningFactor>0.1</GlobalLearningFactor>
+			<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+			<SocialImpact>0.05</SocialImpact>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <FilthRate>3</FilthRate>
+			<Mass>20</Mass>
+		</statBases>
+        <tools>
+            <li>
+                <label>left fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3.2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3.2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+		<race>
+			<body>ABF_Body_Chemwalker_Mechcloud</body>
+            <baseHealthScale>2</baseHealthScale>
+            <nameGenerator>ABF_RulePack_Chemwalker_NameRulesFlakker</nameGenerator>
+            <deathAction>
+                <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
+            </deathAction>
+            <detritusLeavings>
+                <li>
+                    <def>ABF_Thing_Chemwalker_Shell_FlakkerDamaged</def>
+                    <texOverrideIndex>10</texOverrideIndex>
+                    <spawnChance>1</spawnChance>
+                </li>
+            </detritusLeavings>
+		</race>
+		<modExtensions>
+            <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
+                <canBeSapient>false</canBeSapient>
+                <canBeReprogrammable>false</canBeReprogrammable>
+                <droneSkillLevel>7</droneSkillLevel>
+                <inherentSkills>
+                    <li><key>Shooting</key><value>1</value></li>
+                    <li><key>Melee</key><value>1</value></li>
+                </inherentSkills>
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+                    <li>Mood</li>
+                    <li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedNeeds>
+                <artificialNeeds>
+                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>20</value></li>
+                </artificialNeeds>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+            </li>
+		</modExtensions>
+		<butcherProducts>
+            <ABF_Thing_Chemwalker_Shell_FlakkerDamaged>1</ABF_Thing_Chemwalker_Shell_FlakkerDamaged>
+		</butcherProducts>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>

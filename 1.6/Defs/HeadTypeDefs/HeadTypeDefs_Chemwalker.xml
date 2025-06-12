@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_Barbute</defName>
+        <graphicPath>Things/Pawns/Humanlikes/Mechcloud/head/Barbute</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_DomedArmet</defName>
+        <graphicPath>Things/Pawns/Humanlikes/Mechcloud/head/DomedArmet</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_Kettle</defName>
+        <graphicPath>Things/Pawns/Humanlikes/Mechcloud/head/Kettle</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_AdvancedHelmet</defName>
+        <graphicPath>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet_Male_Average_Normal</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_PowerArmorHelmet</defName>
+        <graphicPath>Things/Pawn/Humanlike/Apparel/PowerArmorHelmet/PowerArmorHelmet_Male_Average_Normal</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_ReconArmorHelmet</defName>
+        <graphicPath>Things/Pawn/Humanlike/Apparel/PrestigeReconHelmet/PrestigeReconHelmet_Male_Average_Normal</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>ABF_HeadType_Chemwalker_CataphractHelmet</defName>
+        <graphicPath>Things/Pawn/Humanlike/Apparel/CataphractArmorHelmet/CataphractHelmet_Male_Average_Normal</graphicPath>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+</Defs>

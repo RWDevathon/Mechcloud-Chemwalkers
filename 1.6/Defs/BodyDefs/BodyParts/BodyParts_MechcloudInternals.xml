@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BodyPartDef>
+        <defName>ABF_BodyPart_Chemwalker_Core</defName>
+        <label>mechcloud core</label>
+        <hitPoints>30</hitPoints>
+        <permanentInjuryChanceFactor>0.01</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <bleedRate>4</bleedRate>
+        <tags>
+            <li>ConsciousnessSource</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+</Defs>
