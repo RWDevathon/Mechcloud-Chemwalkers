@@ -82,7 +82,7 @@ namespace ArtificialBeings
                 string roofWarningText = "ABF_RoofPenalty".Translate();
                 Text.Font = GameFont.Small;
                 Text.Anchor = TextAnchor.MiddleLeft;
-                GUI.color = Color.green;
+                GUI.color = Color.red;
                 Widgets.Label(roofWarningRect, roofWarningText);
                 Text.Anchor = TextAnchor.UpperLeft;
                 GUI.color = Color.white;
@@ -220,7 +220,7 @@ namespace ArtificialBeings
                 if (cataphractShellsInRange > 0)
                 {
                     Rect cataphractShellWarningRect = new Rect(curX, curY, 999f, Text.LineHeight);
-                    string cataphractShellWarningText = "ABF_PenaltyPerCataphractShell".Translate(cataphractShellsInRange * 5);
+                    string cataphractShellWarningText = "ABF_PenaltyPerCataphractShell".Translate(cataphractShellsInRange * 8);
                     Text.Font = GameFont.Small;
                     Text.Anchor = TextAnchor.MiddleLeft;
                     GUI.color = Color.red;

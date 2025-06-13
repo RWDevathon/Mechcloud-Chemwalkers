@@ -145,13 +145,13 @@ namespace ArtificialBeings
             }
         }
 
-        protected override void TickInterval(int delta)
+        public override void TickRare()
         {
-            base.TickInterval(delta);
+            base.TickRare();
             if (Active)
             {
                 RecalculateFactor();
-                workRemaining -= delta * workFactor;
+                workRemaining -= GenTicks.TickRareInterval * workFactor;
 
                 if (workRemaining <= 0 && !readyForAttunement)
                 {
@@ -285,7 +285,7 @@ namespace ArtificialBeings
                 List<Thing> mechcloudSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MechcloudInscribed);
                 for (int i = mechcloudSpawners.Count - 1; i >= 0; i--)
                 {
-                    if (Position.DistanceTo(mechcloudSpawners[i].Position) <= radius)
+                    if (mechcloudSpawners[i] != this && Position.DistanceTo(mechcloudSpawners[i].Position) <= radius)
                     {
                         workFactor -= 0.03f;
                     }
@@ -294,7 +294,7 @@ namespace ArtificialBeings
                 List<Thing> lumberingSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_LumberingInscribed);
                 for (int i = lumberingSpawners.Count - 1; i >= 0; i--)
                 {
-                    if (Position.DistanceTo(lumberingSpawners[i].Position) <= radius)
+                    if (lumberingSpawners[i] != this && Position.DistanceTo(lumberingSpawners[i].Position) <= radius)
                     {
                         workFactor -= 0.06f;
                     }
@@ -303,7 +303,7 @@ namespace ArtificialBeings
                 List<Thing> flakkerSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_FlakkerInscribed);
                 for (int i = flakkerSpawners.Count - 1; i >= 0; i--)
                 {
-                    if (Position.DistanceTo(flakkerSpawners[i].Position) <= radius)
+                    if (flakkerSpawners[i] != this && Position.DistanceTo(flakkerSpawners[i].Position) <= radius)
                     {
                         workFactor -= 0.04f;
                     }
@@ -312,7 +312,7 @@ namespace ArtificialBeings
                 List<Thing> marineSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MarineInscribed);
                 for (int i = marineSpawners.Count - 1; i >= 0; i--)
                 {
-                    if (Position.DistanceTo(marineSpawners[i].Position) <= radius)
+                    if (marineSpawners[i] != this && Position.DistanceTo(marineSpawners[i].Position) <= radius)
                     {
                         workFactor -= 0.04f;
                     }
@@ -321,7 +321,7 @@ namespace ArtificialBeings
                 List<Thing> cataphractSpawners = Map.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_CataphractInscribed);
                 for (int i = cataphractSpawners.Count - 1; i >= 0; i--)
                 {
-                    if (Position.DistanceTo(cataphractSpawners[i].Position) <= radius)
+                    if (cataphractSpawners[i] != this && Position.DistanceTo(cataphractSpawners[i].Position) <= radius)
                     {
                         workFactor -= 0.08f;
                     }
