@@ -139,7 +139,7 @@ namespace ArtificialBeings
                 }
 
                 // 6% penalty per inscribed lumbering shell
-                List<Thing> lumberingShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_MechcloudInscribed);
+                List<Thing> lumberingShells = Find.CurrentMap.listerThings.ThingsOfDef(ABF_ThingDefOf.ABF_Thing_Chemwalker_Shell_LumberingInscribed);
                 int lumberingShellsInRange = 0;
                 for (int i = lumberingShells.Count - 1; i >= 0; i--)
                 {
