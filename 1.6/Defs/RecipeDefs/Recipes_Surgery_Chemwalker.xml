@@ -44,7 +44,7 @@
 		<hideBodyPartNames>true</hideBodyPartNames>
         <isViolation>false</isViolation>
 		<targetsBodyPart>false</targetsBodyPart>
-        <recipeUsers inherit="False">
+        <recipeUsers Inherit="False">
             <li>ABF_Thing_Chemwalker_Eltex</li>
         </recipeUsers>
 	</RecipeDef>
