@@ -123,10 +123,10 @@
             <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
                 <canBeSapient>false</canBeSapient>
                 <canBeReprogrammable>false</canBeReprogrammable>
-                <droneSkillLevel>7</droneSkillLevel>
+                <droneSkillLevel>8</droneSkillLevel>
                 <inherentSkills>
-                    <li><key>Shooting</key><value>1</value></li>
-                    <li><key>Melee</key><value>1</value></li>
+                    <li><key>Shooting</key><value>2</value></li>
+                    <li><key>Melee</key><value>2</value></li>
                 </inherentSkills>
                 <blacklistedNeeds>
                     <li>DrugDesire</li>

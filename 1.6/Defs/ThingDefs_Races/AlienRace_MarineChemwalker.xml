@@ -61,7 +61,7 @@
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<GlobalLearningFactor>0.1</GlobalLearningFactor>
-			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
 			<SocialImpact>0.05</SocialImpact>
 			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -75,14 +75,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>10.2</power>
+                <power>12.4</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>18</amount>
+                            <amount>20</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -92,14 +92,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>10.2</power>
+                <power>12.4</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>18</amount>
+                            <amount>20</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>

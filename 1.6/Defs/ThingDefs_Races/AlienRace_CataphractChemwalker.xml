@@ -75,14 +75,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>12.2</power>
+                <power>18.8</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>22</amount>
+                            <amount>32</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -92,14 +92,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>12.2</power>
+                <power>18.8</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>22</amount>
+                            <amount>32</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
