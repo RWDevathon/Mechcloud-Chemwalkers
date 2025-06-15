@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
 		<defName>ABF_Thing_Chemwalker_Flakker</defName>
 		<label>flak chemwalker</label>
-		<description>A flak jacket, pants, and helmet imprinted and imbued with psychic power animated by a cloud of chemfuel-consuming mechanites that dwell within the apparel as if using it as a shell. When not under the psychic command of a higher intelligence, flakker chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies are generally terrified by what they call "poltergeist warriors" due to the uncanny featureless mass of the mechanites that resembling a shifting gray shadow that is visible protruding from the flak armor.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence and call these particular entities "flakkers" due to the flak jacket they inhabit.\n\nIt is a mystery as to how the Mechcloud understands which part of the helmet should be facing forward - and why the Mechcloud chooses to hoist it so far above the jacket.</description>
+		<description>A flak jacket, pants, and helmet imprinted and imbued with psychic power animated by a cloud of chemfuel-consuming mechanites that dwell within the apparel as if using it as a shell.\n\nPrimitive societies are generally terrified by what they call "poltergeist warriors" due to the uncanny featureless mass of the mechanites that resembling a shifting gray shadow that is visible protruding from the flak armor.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence and call these particular entities "flakkers" due to the flak jacket they inhabit.\n\nIt is a mystery as to how the Mechcloud understands which part of the helmet should be facing forward - and why the Mechcloud chooses to hoist it so far above the jacket.</description>
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -123,10 +123,10 @@
             <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
                 <canBeSapient>false</canBeSapient>
                 <canBeReprogrammable>false</canBeReprogrammable>
-                <droneSkillLevel>7</droneSkillLevel>
+                <droneSkillLevel>8</droneSkillLevel>
                 <inherentSkills>
-                    <li><key>Shooting</key><value>1</value></li>
-                    <li><key>Melee</key><value>1</value></li>
+                    <li><key>Shooting</key><value>2</value></li>
+                    <li><key>Melee</key><value>2</value></li>
                 </inherentSkills>
                 <blacklistedNeeds>
                     <li>DrugDesire</li>

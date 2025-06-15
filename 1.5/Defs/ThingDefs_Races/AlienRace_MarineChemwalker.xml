@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
 		<defName>ABF_Thing_Chemwalker_Marine</defName>
 		<label>marine chemwalker</label>
-		<description>A suit of intricately inscribed and psychically imbued power armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell. When not under the psychic command of a higher intelligence, marine chemwalkers will wander aimlessly in search of the chemfuel necessary to sustain themselves.\n\nPrimitive societies see these "ghosts from the stars" as suits of magical armor possessed by spirits of those who came from beyond their world to continue in death what they did in life.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.</description>
+		<description>A suit of intricately inscribed and psychically imbued power armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell.\n\nPrimitive societies see these "ghosts from the stars" as suits of magical armor possessed by spirits of those who came from beyond their world to continue in death what they did in life.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.</description>
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -61,7 +61,7 @@
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<GlobalLearningFactor>0.1</GlobalLearningFactor>
-			<WorkSpeedGlobal>1</WorkSpeedGlobal>
+			<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
 			<SocialImpact>0.05</SocialImpact>
 			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -75,14 +75,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>10.2</power>
+                <power>12.4</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>18</amount>
+                            <amount>20</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -92,14 +92,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>10.2</power>
+                <power>12.4</power>
                 <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>18</amount>
+                            <amount>20</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
