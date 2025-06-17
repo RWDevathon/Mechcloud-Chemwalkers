@@ -27,5 +27,19 @@ namespace ArtificialBeings
             base.Notify_PawnKilled();
             pawn.DropAndForbidEverything();
         }
+
+        // Chemwalkers should have all tendable injuries automatically tended upon taking damage. The tend quality should always be a flat 50%.
+        public override void Notify_PawnPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
+        {
+            base.Notify_PawnPostApplyDamage(dinfo, totalDamageDealt);
+            foreach (Hediff hediff in pawn.health.hediffSet.GetHediffsTendable())
+            {
+                if (hediff is Hediff_Injury hediffInjury && !hediff.IsTended())
+                {
+                    // Set it to 100% quality, with 50% max quality, to avoid randomness setting it lower. Set a batchPosition of 1 to make it tend silently.
+                    hediffInjury.Tended(1f, 0.5f, 1);
+                }
+            }
+        }
     }
 }
