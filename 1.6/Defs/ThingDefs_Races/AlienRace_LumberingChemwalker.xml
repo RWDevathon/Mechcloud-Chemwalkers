@@ -158,6 +158,7 @@
                 <artificialNeeds>
                     <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>80</value></li>
                 </artificialNeeds>
+                <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
             </li>
 		</modExtensions>
 		<butcherProducts>
