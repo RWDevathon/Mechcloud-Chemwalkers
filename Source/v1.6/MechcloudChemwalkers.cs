@@ -1,6 +1,4 @@
-﻿using HarmonyLib;
-using System.Reflection;
-using Verse;
+﻿using Verse;
 
 namespace ArtificialBeings
 {
@@ -8,7 +6,6 @@ namespace ArtificialBeings
     {
         public MechcloudChemwalkers(ModContentPack content) : base(content)
         {
-            new Harmony("MechcloudChemwalkers").PatchAll(Assembly.GetExecutingAssembly());
         }
     }
 }

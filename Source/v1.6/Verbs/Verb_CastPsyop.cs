@@ -14,7 +14,7 @@ namespace ArtificialBeings
             {
                 return false;
             }
-            if (!(target.Pawn is Pawn pawn && pawn.def.race.DeathActionWorker is DeathActionWorker_Mechcloud))
+            if (!(target.Pawn is Pawn pawn && pawn.def.race.FleshType == ABF_FleshTypeDefOf.ABF_FleshType_Chemwalker_Base))
             {
                 return false;
             }

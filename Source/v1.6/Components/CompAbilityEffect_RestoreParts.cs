@@ -20,7 +20,7 @@ namespace ArtificialBeings
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.Apply(target, dest);
-            if (target.Pawn.def.race.DeathActionWorker is DeathActionWorker_Mechcloud)
+            if (target.Pawn.def.race.FleshType == ABF_FleshTypeDefOf.ABF_FleshType_Chemwalker_Base)
             {
                 casterPsyfocusLimit = Caster.psychicEntropy.CurrentPsyfocus;
                 casterEntropyLimit = Caster.psychicEntropy.MaxEntropy - Caster.psychicEntropy.EntropyValue;

@@ -146,6 +146,7 @@
 			</compatibility>
         </alienRace>
 		<race>
+			<body>ABF_Body_Chemwalker_Mechcloud</body>
             <renderTree>Humanlike</renderTree>
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>

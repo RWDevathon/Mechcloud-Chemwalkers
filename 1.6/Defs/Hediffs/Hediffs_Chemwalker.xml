@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!-- This hediff exists only to act as a notification function, and handle some details on downed/death. -->
+    <HediffDef>
+        <defName>ABF_Hediff_Chemwalker_Mechcloud</defName>
+        <hediffClass>ArtificialBeings.Hediff_Mechcloud</hediffClass>
+        <label>Mechcloud</label>
+        <description>This unit is a mechcloud, which will collapse into its component parts on death.</description>
+        <isBad>false</isBad>
+    </HediffDef>
+
     <HediffDef>
         <defName>ABF_Hediff_Chemwalker_ChemfuelShortage</defName>
         <label>chemfuel shortage</label>

@@ -9,7 +9,7 @@ namespace ArtificialBeings
     {
         public override bool AvailableOnNow(Thing thing, BodyPartRecord part = null)
         {
-            if (thing is Pawn pawn && pawn.Faction == Faction.OfPlayer && pawn.def.race.DeathActionWorker is DeathActionWorker_Mechcloud && !pawn.health.hediffSet.HasHediff(HediffDefOf.PsychicAmplifier))
+            if (thing is Pawn pawn && pawn.Faction == Faction.OfPlayer && pawn.def.race.FleshType == ABF_FleshTypeDefOf.ABF_FleshType_Chemwalker_Base && !pawn.health.hediffSet.HasHediff(HediffDefOf.PsychicAmplifier))
             {
                 return true;
             }

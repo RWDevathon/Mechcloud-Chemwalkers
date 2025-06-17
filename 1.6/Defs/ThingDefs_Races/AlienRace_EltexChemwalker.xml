@@ -111,12 +111,8 @@
             </li>
         </tools>
 		<race>
-			<body>ABF_Body_Chemwalker_Mechcloud</body>
             <baseHealthScale>1.5</baseHealthScale>
             <nameGenerator>ABF_RulePack_Chemwalker_NameRulesEltex</nameGenerator>
-            <deathAction>
-                <workerClass>ArtificialBeings.DeathActionWorker_Mechcloud</workerClass>
-            </deathAction>
             <detritusLeavings>
                 <li>
                     <def>ABF_Thing_Chemwalker_Shell_EltexDamaged</def>

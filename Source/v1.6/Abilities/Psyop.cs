@@ -70,12 +70,12 @@ namespace ArtificialBeings
 
         public override bool CanApplyOn(GlobalTargetInfo target)
         {
-            return base.CanApplyOn(target) && target.Pawn is Pawn pawn && pawn.def.race.DeathActionWorker is DeathActionWorker_Mechcloud;
+            return base.CanApplyOn(target) && target.Pawn is Pawn pawn && pawn.def.race.FleshType == ABF_FleshTypeDefOf.ABF_FleshType_Chemwalker_Base;
         }
 
         public override bool CanApplyOn(LocalTargetInfo target)
         {
-            return base.CanApplyOn(target) && target.Pawn is Pawn pawn && pawn.def.race.DeathActionWorker is DeathActionWorker_Mechcloud;
+            return base.CanApplyOn(target) && target.Pawn is Pawn pawn && pawn.def.race.FleshType == ABF_FleshTypeDefOf.ABF_FleshType_Chemwalker_Base;
         }
 
         public Psyop(Pawn pawn)
@@ -154,7 +154,7 @@ namespace ArtificialBeings
         // Psyops only apply to chemwalkers
         protected override void ApplyEffects(IEnumerable<CompAbilityEffect> effects, LocalTargetInfo target, LocalTargetInfo dest)
         {
-            if (target.Pawn.def.race.DeathActionWorker is DeathActionWorker_Mechcloud)
+            if (target.Pawn.def.race.FleshType == ABF_FleshTypeDefOf.ABF_FleshType_Chemwalker_Base)
             {
                 foreach (CompAbilityEffect effect in effects)
                 {

@@ -28,10 +28,6 @@
     </DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="AlienRace">
       <HintPath>..\..\..\..\..\..\workshop\content\294100\839005762\1.5\Assemblies\AlienRace.dll</HintPath>
       <Private>False</Private>
@@ -184,9 +180,8 @@
     <Compile Include="Components\CompTargetEffectProperties_JumpstartChemwalker.cs" />
     <Compile Include="Components\CompTargetEffect_JumpstartChemwalker.cs" />
     <Compile Include="Components\CompAbilityEffect_RestoreParts.cs" />
-    <Compile Include="DeathActionWorkers\DeathActionWorker_Mechcloud.cs" />
     <Compile Include="Extensions\ThingExtensions.cs" />
-    <Compile Include="Harmony\ABF_Pawn_HealthTracker_Patch.cs" />
+    <Compile Include="Hediffs\Hediff_Mechcloud.cs" />
     <Compile Include="JobDrivers\JobDriver_JumpstartChemwalker.cs" />
     <Compile Include="JobDrivers\JobDriver_PackUpArmor.cs" />
     <Compile Include="JobDrivers\JobDriver_AttuneToArmor.cs" />
