@@ -8,8 +8,21 @@
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
-				<apparelList>
-				</apparelList>
+				<whiteApparelList>
+                    <li>Apparel_ShieldBelt</li>
+                    <li>Apparel_SmokepopBelt</li>
+                    <li>Apparel_FirefoampopPack</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">Apparel_PackTox</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DisruptorFlarePack</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_PackTurret</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Apparel_DeadlifePack</li>
+                    <li>OrbitalTargeterBombardment</li>
+                    <li>OrbitalTargeterPowerBeam</li>
+                    <li>OrbitalTargeterMechCluster</li>
+                    <li>TornadoGenerator</li>
+                    <li>Apparel_PackJump</li>
+                    <li>Apparel_PackBroadshield</li>
+				</whiteApparelList>
 			</raceRestriction>
 			<graphicPaths>
                 <body>
