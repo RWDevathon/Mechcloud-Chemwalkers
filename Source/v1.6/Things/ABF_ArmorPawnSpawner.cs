@@ -30,7 +30,6 @@ namespace ArtificialBeings
                 ResetWorkRemaining();
             }
             RecalculateFactor();
-            readyForAttunement = false;
         }
 
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
