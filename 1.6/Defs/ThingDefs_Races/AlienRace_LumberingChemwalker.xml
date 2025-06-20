@@ -61,7 +61,7 @@
             </generalSettings>
 		</alienRace>
 		<statBases>
-			<MarketValue>1800</MarketValue>
+			<MarketValue>1400</MarketValue>
 			<MoveSpeed>3.60</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
