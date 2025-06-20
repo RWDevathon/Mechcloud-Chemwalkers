@@ -66,11 +66,10 @@
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 			<GlobalLearningFactor>0.1</GlobalLearningFactor>
-			<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+			<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
 			<SocialImpact>0.05</SocialImpact>
 			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-            <IncomingDamageFactor>0.8</IncomingDamageFactor>
             <FilthRate>4</FilthRate>
 			<Mass>120.0</Mass>
 		</statBases>
