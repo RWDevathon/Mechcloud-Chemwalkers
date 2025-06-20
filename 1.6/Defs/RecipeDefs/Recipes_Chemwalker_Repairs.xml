@@ -18,6 +18,7 @@
             <li Class="ArtificialBeings.ABF_RestorePartExtension">
                 <fullRestore>true</fullRestore>
                 <propagateUpwards>false</propagateUpwards>
+                <missingPartsOnly>true</missingPartsOnly>
             </li>
         </modExtensions>
     </RecipeDef>
