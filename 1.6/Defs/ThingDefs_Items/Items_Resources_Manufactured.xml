@@ -92,7 +92,7 @@
         <techLevel>Medieval</techLevel>
         <stackLimit>1</stackLimit>
         <statBases>
-            <MarketValue>400</MarketValue>
+            <MarketValue>100</MarketValue>
             <Mass>20</Mass>
         </statBases>
     </ThingDef>
@@ -113,7 +113,7 @@
         <techLevel>Medieval</techLevel>
         <stackLimit>1</stackLimit>
         <statBases>
-            <MarketValue>1600</MarketValue>
+            <MarketValue>200</MarketValue>
             <Mass>100</Mass>
         </statBases>
     </ThingDef>
@@ -134,7 +134,7 @@
         <techLevel>Industrial</techLevel>
         <stackLimit>1</stackLimit>
         <statBases>
-            <MarketValue>400</MarketValue>
+            <MarketValue>100</MarketValue>
             <Mass>20</Mass>
         </statBases>
     </ThingDef>
@@ -155,7 +155,7 @@
         <techLevel>Spacer</techLevel>
         <stackLimit>1</stackLimit>
         <statBases>
-            <MarketValue>400</MarketValue>
+            <MarketValue>150</MarketValue>
             <Mass>20</Mass>
         </statBases>
     </ThingDef>
@@ -176,7 +176,7 @@
         <techLevel>Spacer</techLevel>
         <stackLimit>1</stackLimit>
         <statBases>
-            <MarketValue>400</MarketValue>
+            <MarketValue>100</MarketValue>
             <Mass>20</Mass>
         </statBases>
     </ThingDef>
@@ -197,7 +197,7 @@
         <techLevel>Spacer</techLevel>
         <stackLimit>1</stackLimit>
         <statBases>
-            <MarketValue>400</MarketValue>
+            <MarketValue>200</MarketValue>
             <Mass>20</Mass>
         </statBases>
     </ThingDef>
