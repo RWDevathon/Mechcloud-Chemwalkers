@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <!-- Recipe for smelting damaged shells into resources -->
+    <RecipeDef>
+        <defName>ABF_Recipe_Chemwalker_SmeltShell</defName>
+        <label>smelt chemwalker shell</label>
+        <description>Methodically dismantle and break down chemwalker shells into useful resources.</description>
+        <jobString>Smelting shell.</jobString>
+        <workAmount>1400</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <specialProducts>
+            <li>Smelted</li>
+        </specialProducts>
+        <recipeUsers>
+            <li>FueledSmithy</li>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                <categories>
+                    <li>ABF_ThingCategory_Chemwalker_Shells</li>
+                </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>ABF_ThingCategory_Chemwalker_Shells</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <!-- Recipes for repairing damaged shells into their produced shell states -->
     <RecipeDef>
         <defName>ABF_Recipe_Chemwalker_RepairMechcloudShell</defName>
         <label>salvage mechcloud chemwalker shell</label>

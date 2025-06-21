@@ -95,6 +95,9 @@
             <MarketValue>100</MarketValue>
             <Mass>20</Mass>
         </statBases>
+        <smeltProducts>
+            <Steel>12</Steel>
+        </smeltProducts>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -116,6 +119,10 @@
             <MarketValue>200</MarketValue>
             <Mass>100</Mass>
         </statBases>
+        <smeltProducts>
+            <Uranium>20</Uranium>
+            <Steel>10</Steel>
+        </smeltProducts>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -137,6 +144,9 @@
             <MarketValue>100</MarketValue>
             <Mass>20</Mass>
         </statBases>
+        <smeltProducts>
+            <Steel>25</Steel>
+        </smeltProducts>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -158,6 +168,9 @@
             <MarketValue>150</MarketValue>
             <Mass>20</Mass>
         </statBases>
+        <smeltProducts>
+            <Plasteel>15</Plasteel>
+        </smeltProducts>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -179,6 +192,9 @@
             <MarketValue>100</MarketValue>
             <Mass>20</Mass>
         </statBases>
+        <smeltProducts>
+            <Plasteel>15</Plasteel>
+        </smeltProducts>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -200,6 +216,10 @@
             <MarketValue>200</MarketValue>
             <Mass>20</Mass>
         </statBases>
+        <smeltProducts>
+            <Plasteel>20</Plasteel>
+            <Uranium>10</Uranium>
+        </smeltProducts>
     </ThingDef>
 
     <!-- Chemwalker Infusions -->
