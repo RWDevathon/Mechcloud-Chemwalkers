@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
 		<defName>ABF_Thing_Chemwalker_Lumbering</defName>
 		<label>lumbering chemwalker</label>
-		<description>A superhumanly massive suit of elaborately inscribed and psychically imbued metal armor animated by a ravenous swarm of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell.\n\nPrimitive societies often refer to them as "stormcloud golems" due to the incessant rattling sound of the mechanite swarm swirling inside the armor like a raging tempest - often believing that only dread warlords or powerful heroes can possess a spirit capable of inhabiting and wielding such a construct.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.</description>
+		<description>A superhumanly massive suit of elaborately inscribed and psychically imbued metal armor animated by a ravenous swarm of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell.\n\nPrimitive societies often refer to them as "stormcloud golems" due to the incessant rattling sound of the mechanite swarm swirling inside the armor like a raging tempest - often believing that only dread warlords or powerful heroes can possess a spirit capable of inhabiting and wielding such a construct.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.\n\nThe sheer bulkiness and size of these constructs severely inhibits fine motor control, invariably resulting in goods of awful quality.</description>
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -136,10 +136,10 @@
             <li Class="ArtificialBeings.ABF_ArtificialPawnExtension">
                 <canBeSapient>false</canBeSapient>
                 <canBeReprogrammable>false</canBeReprogrammable>
-                <droneSkillLevel>8</droneSkillLevel>
+                <droneSkillLevel>6</droneSkillLevel>
                 <inherentSkills>
-                    <li><key>Shooting</key><value>4</value></li>
-                    <li><key>Melee</key><value>4</value></li>
+                    <li><key>Shooting</key><value>6</value></li>
+                    <li><key>Melee</key><value>6</value></li>
                 </inherentSkills>
                 <blacklistedNeeds>
                     <li>DrugDesire</li>
@@ -158,6 +158,7 @@
                     <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>80</value></li>
                 </artificialNeeds>
                 <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+                <droneQualityRange>Awful~Awful</droneQualityRange>
             </li>
 		</modExtensions>
 		<butcherProducts>

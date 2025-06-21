@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
 		<defName>ABF_Thing_Chemwalker_Cataphract</defName>
 		<label>cataphract chemwalker</label>
-		<description>A suit of intricately inscribed and psychically imbued cataphract armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell.\n\nGiven the full seal that these suits provide, few can tell that these chemwalkers are not people at first. The only giveaway is the quiet rattling of millions of mechanites coursing through the armor, which can easily be waved off as machinery within the suit. It only becomes clear that there is no one inside once the armor is removed and the mechanites escape - or when the chemwalker, which lacks the ability to speak, fails to communicate when expected.</description>
+		<description>A suit of intricately inscribed and psychically imbued cataphract armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell.\n\nGiven the full seal that these suits provide, few can tell that these chemwalkers are not people at first. The only giveaway is the quiet rattling of millions of mechanites coursing through the armor, which can easily be waved off as machinery within the suit. It only becomes clear that there is no one inside once the armor is removed and the mechanites escape - or when the chemwalker, which lacks the ability to speak, fails to communicate when expected.\n\nCataphracts lack some of the finer movements of their lighter peers, and this occasionally results in slightly substandard goods rather than the expected degree of quality.</description>
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -155,6 +155,7 @@
                     <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>80</value></li>
                 </artificialNeeds>
                 <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+                <droneQualityRange>Poor~Normal</droneQualityRange>
             </li>
 		</modExtensions>
 		<butcherProducts>

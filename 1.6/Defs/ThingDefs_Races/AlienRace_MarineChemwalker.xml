@@ -4,7 +4,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="ABF_Thing_Chemwalker_BasePawn">
 		<defName>ABF_Thing_Chemwalker_Marine</defName>
 		<label>marine chemwalker</label>
-		<description>A suit of intricately inscribed and psychically imbued power armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell.\n\nPrimitive societies see these "ghosts from the stars" as suits of magical armor possessed by spirits of those who came from beyond their world to continue in death what they did in life.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.</description>
+		<description>A suit of intricately inscribed and psychically imbued power armor animated by a cloud of chemfuel-consuming mechanites that dwell within the suit as if using it as a shell.\n\nPrimitive societies see these "ghosts from the stars" as suits of magical armor possessed by spirits of those who came from beyond their world to continue in death what they did in life.\n\nMore sophisticated societies recognize that there is nothing magical or spiritual about these entities, but rather that they are animated by a cloud of millions of microscopic - but quite powerful - mechanites that can be dominated by an individual who can call upon psychic influence.\n\nMarines are designed with rigid, unshifting consistency in mind, and they follow this design unquestioningly - everything they make is of perfectly normal quality.</description>
 		<alienRace>
 			<raceRestriction>
 				<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
@@ -155,6 +155,7 @@
                     <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>40</value></li>
                 </artificialNeeds>
                 <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
+                <droneQualityRange>Normal~Normal</droneQualityRange>
             </li>
 		</modExtensions>
 		<butcherProducts>
