@@ -14,6 +14,7 @@
                 <hediffToApplyOnEmpty>ABF_Hediff_Chemwalker_ChemfuelShortage</hediffToApplyOnEmpty>
                 <hediffRisePerDay>1</hediffRisePerDay>
                 <hediffFallPerDay>1</hediffFallPerDay>
+                <unitsLabel>chemfuel</unitsLabel>
             </li>
         </modExtensions>
     </NeedDef>
