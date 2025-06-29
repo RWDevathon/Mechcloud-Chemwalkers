@@ -145,7 +145,14 @@
                     <li>Indoors</li>
                 </blacklistedNeeds>
                 <artificialNeeds>
-                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>20</value></li>
+                    <li>
+                        <key>ABF_Need_Chemwalker_Chemfuel</key>
+                        <value>
+                            <maximumCapacity>20</maximumCapacity>
+                            <fallRatePerDay>5</fallRatePerDay>
+                            <fallRateIsPercentage>false</fallRateIsPercentage>
+                        </value>
+                    </li>
                 </artificialNeeds>
                 <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
                 <droneQualityRange>Normal~Normal</droneQualityRange>

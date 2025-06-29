@@ -5,9 +5,8 @@
         <defName>ABF_Need_Chemwalker_Chemfuel</defName>
         <needClass>ArtificialBeings.Need_Artificial</needClass>
         <label>chemfuel</label>
-        <description>Chemfuel is the amount of chemfuel a pawn currently retains. If it is at zero, the pawn will swiftly shut down and perish.</description>
+        <description>Chemfuel is the amount of chemfuel a creature currently retains. If it is at zero, the creature will swiftly shut down and perish.</description>
         <listPriority>380</listPriority>
-        <fallPerDay>0.33334</fallPerDay>
         <showForCaravanMembers>true</showForCaravanMembers>
         <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
         <modExtensions>
