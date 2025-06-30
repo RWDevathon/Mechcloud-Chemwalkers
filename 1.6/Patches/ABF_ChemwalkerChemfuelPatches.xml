@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+    <!-- It's possible another mod is already adding the desired mod extension. Patch it defensively to add the ability for it to satisfy the need. -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]/modExtensions/li[@Class="ArtificialBeings.ABF_NeedFulfillerExtension"]/needOffsetRelations</xpath>
+        <nomatch Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef[defName="Chemfuel"]</xpath>
+            <value>
+                <li Class="ArtificialBeings.ABF_NeedFulfillerExtension">
+                    <needOffsetRelations></needOffsetRelations>
+                </li>
+            </value>
+        </nomatch>
+    </Operation>
+
     <!-- Ensure that chemfuel actually can fulfill the chemfuel need -->
-    <Operation Class="PatchOperationAddModExtension">
-        <xpath>Defs/ThingDef[defName="Chemfuel"]</xpath>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]/modExtensions/li[@Class="ArtificialBeings.ABF_NeedFulfillerExtension"]/needOffsetRelations</xpath>
         <value>
-            <li Class="ArtificialBeings.ABF_NeedFulfillerExtension">
-                <needOffsetRelations>
-                    <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>1</value></li>
-                </needOffsetRelations>
-            </li>
+            <li><key>ABF_Need_Chemwalker_Chemfuel</key><value>1</value></li>
         </value>
     </Operation>
 
-    <!-- Give chemfuel a ThingComp which will provide the float menu options for forcing consumption -->
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="Chemfuel"]/comps</xpath>
-        <value>
-            <li>
-                <compClass>ArtificialBeings.CompArtificialNeedFulfiller</compClass>
-            </li>
-        </value>
+    <!-- It's possible another mod is already adding the desired ThingComp for offering float menu options for forcing consumption. We need only add one if there isn't already one. -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Chemfuel"]/comps/li[compClass="ArtificialBeings.CompArtificialNeedFulfiller"]</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Chemfuel"]/comps</xpath>
+            <value>
+                <li>
+                    <compClass>ArtificialBeings.CompArtificialNeedFulfiller</compClass>
+                </li>
+            </value>
+        </nomatch>
     </Operation>
 
 </Patch>
