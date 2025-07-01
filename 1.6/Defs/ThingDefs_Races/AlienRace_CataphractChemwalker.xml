@@ -65,6 +65,11 @@
 							</second>
 						</li>
 					</colorChannels>
+                    <headOffsetDirectional>
+                        <north>
+                            <layerOffset>-0.018</layerOffset>
+                        </north>
+                    </headOffsetDirectional>
                 </alienPartGenerator>
             </generalSettings>
 		</alienRace>
