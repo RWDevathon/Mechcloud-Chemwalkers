@@ -76,7 +76,7 @@ namespace ArtificialBeings
             base.DrawPlaceMouseAttachments(curX, ref curY, def, center, rot);
 
             // 5% efficiency max if roofed or indoors
-            if (Find.CurrentMap.roofGrid.Roofed(center) || (center.GetRoom(Find.CurrentMap) is Room room && !room.TouchesMapEdge))
+            if (Find.CurrentMap.roofGrid.Roofed(center) || (center.GetRoom(Find.CurrentMap) is Room room && !room.PsychologicallyOutdoors))
             {
                 Rect roofWarningRect = new Rect(curX, curY, 999f, Text.LineHeight);
                 string roofWarningText = "ABF_RoofPenalty".Translate();

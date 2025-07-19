@@ -234,7 +234,7 @@ namespace ArtificialBeings
 
             // Only chemwalkers that have a natural effect radius should be affected by interior/exterior conditions.
             float? radius = spawnerExtension.naturalRadius;
-            if (radius != null && (Position.Roofed(Map) || (Position.GetRoom(Map) is Room room && !room.TouchesMapEdge)))
+            if (radius != null && (Position.Roofed(Map) || (Position.GetRoom(Map) is Room room && !room.PsychologicallyOutdoors)))
             {
                 workFactor = 0.05f;
                 return;
