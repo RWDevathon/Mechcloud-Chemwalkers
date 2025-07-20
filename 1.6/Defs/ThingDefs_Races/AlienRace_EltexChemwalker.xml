@@ -75,6 +75,9 @@
 						</li>
 					</colorChannels>
                 </alienPartGenerator>
+                <meditationFocii>
+                    <li>Natural</li>
+                </meditationFocii>
             </generalSettings>
 		</alienRace>
 		<statBases>
