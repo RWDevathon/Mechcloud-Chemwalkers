@@ -23,7 +23,7 @@
 				<allowHumanBios>false</allowHumanBios>
 				<maxDamageForSocialfight>20</maxDamageForSocialfight>
 				<immuneToAge>true</immuneToAge>
-                <notXenophobistTowards />
+                <immuneToXenophobia>true</immuneToXenophobia>
 				<alienPartGenerator>
                     <bodyTypes>
                         <li>Male</li>
