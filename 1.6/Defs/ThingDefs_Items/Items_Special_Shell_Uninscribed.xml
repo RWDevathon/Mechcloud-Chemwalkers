@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Manufactured Chemwalker shells that have not yet been inscribed with sigils at an art bench -->
+
+    <ThingDef Name="ABF_Thing_Chemwalker_ShellBase" ParentName="ResourceBase" Abstract="True">
+        <description>This pile of armor - unadorned and unassuming - has yet to be inscribed with the sigils and psychic catalysts necessary to be animated and yet to be given a chemfuel core to attract the swarm that will animate it. One day, though, this unassuming set of armor may serve a great cause - or perhaps it already has and patiently awaits the opportunity to do so again?</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <thingCategories>
+            <li>ABF_ThingCategory_Chemwalker_Shells</li>
+        </thingCategories>
+        <techLevel>Medieval</techLevel>
+        <stackLimit>1</stackLimit>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smelt</effectWorking>
+            <soundWorking>Recipe_Smelt</soundWorking>
+            <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_ShellBase">
+        <defName>ABF_Thing_Chemwalker_Shell_Mechcloud</defName>
+        <label>mechcloud chemwalker shell</label>
+        <statBases>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>25</Mass>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <Chemfuel>100</Chemfuel>
+            <Silver>4</Silver>
+            <Gold>1</Gold>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>ABF_ResearchProject_Chemwalker_MechcloudBasics</researchPrerequisite>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_ShellBase">
+        <defName>ABF_Thing_Chemwalker_Shell_Lumbering</defName>
+        <label>lumbering chemwalker shell</label>
+        <statBases>
+            <WorkToMake>96000</WorkToMake>
+            <Mass>120</Mass>
+        </statBases>
+        <costList>
+            <Uranium>80</Uranium>
+            <Jade>40</Jade>
+            <Steel>40</Steel>
+            <Chemfuel>300</Chemfuel>
+            <Silver>12</Silver>
+            <Gold>2</Gold>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>ABF_ResearchProject_Chemwalker_MechcloudBasics</researchPrerequisite>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_ShellBase">
+        <defName>ABF_Thing_Chemwalker_Shell_Flakker</defName>
+        <label>flakker chemwalker shell</label>
+        <statBases>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>120</Mass>
+        </statBases>
+        <costList>
+            <Chemfuel>100</Chemfuel>
+            <Apparel_FlakPants>1</Apparel_FlakPants>
+            <Apparel_FlakJacket>1</Apparel_FlakJacket>
+            <Apparel_AdvancedHelmet>1</Apparel_AdvancedHelmet>
+        </costList>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+                <li>FlakArmor</li>
+            </researchPrerequisites>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_ShellBase">
+        <defName>ABF_Thing_Chemwalker_Shell_Marine</defName>
+        <label>marine chemwalker shell</label>
+        <statBases>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>120</Mass>
+        </statBases>
+        <costList>
+            <Chemfuel>200</Chemfuel>
+            <Apparel_PowerArmorHelmet>1</Apparel_PowerArmorHelmet>
+            <Apparel_PowerArmor>1</Apparel_PowerArmor>
+        </costList>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+                <li>PoweredArmor</li>
+            </researchPrerequisites>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_ShellBase">
+        <defName>ABF_Thing_Chemwalker_Shell_Eltex</defName>
+        <label>eltex chemwalker shell</label>
+        <statBases>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>120</Mass>
+        </statBases>
+        <costList>
+            <Chemfuel>200</Chemfuel>
+            <Apparel_ArmorHelmetReconPrestige>1</Apparel_ArmorHelmetReconPrestige>
+            <Apparel_ArmorReconPrestige>1</Apparel_ArmorReconPrestige>
+        </costList>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+                <li>ReconArmor</li>
+            </researchPrerequisites>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_ShellBase">
+        <defName>ABF_Thing_Chemwalker_Shell_Cataphract</defName>
+        <label>cataphract chemwalker shell</label>
+        <statBases>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>120</Mass>
+        </statBases>
+        <costList>
+            <Chemfuel>400</Chemfuel>
+            <Apparel_ArmorHelmetCataphract>1</Apparel_ArmorHelmetCataphract>
+            <Apparel_ArmorCataphract>1</Apparel_ArmorCataphract>
+        </costList>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
+                <li>CataphractArmor</li>
+            </researchPrerequisites>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>

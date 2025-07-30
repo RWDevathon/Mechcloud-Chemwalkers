@@ -36,16 +36,20 @@
     </RecipeDef>
 
     <!-- Recipes for repairing damaged shells into their produced shell states -->
-    <RecipeDef>
-        <defName>ABF_Recipe_Chemwalker_RepairMechcloudShell</defName>
-        <label>salvage mechcloud chemwalker shell</label>
-        <description>Salvage what you can from mechcloud chemwalker wreckage to construct a new shell.</description>
-        <jobString>Salvaging mechcloud wreckage.</jobString>
-        <workAmount>10000</workAmount>
+    <RecipeDef Name="ABF_Recipe_Chemwalker_RepairShellBase" Abstract="True">
+        <jobString>Repairing wrecked chemwalker shell</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
+        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
+    </RecipeDef>
+
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_RepairShellBase">
+        <defName>ABF_Recipe_Chemwalker_RepairMechcloudShell</defName>
+        <label>salvage mechcloud chemwalker shell</label>
+        <description>Salvage what you can from mechcloud chemwalker wreckage to construct a new shell.</description>
+        <workAmount>10000</workAmount>
         <researchPrerequisite>ABF_ResearchProject_Chemwalker_MechcloudBasics</researchPrerequisite>
         <recipeUsers>
             <li>FueledSmithy</li>
@@ -86,19 +90,13 @@
                 <li>Chemfuel</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
     </RecipeDef>
 
-    <RecipeDef>
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_RepairShellBase">
         <defName>ABF_Recipe_Chemwalker_RepairLumberingShell</defName>
         <label>salvage lumbering chemwalker shell</label>
         <description>Salvage what you can from lumbering chemwalker wreckage to construct a new shell.</description>
-        <jobString>Salvaging lumbering wreckage.</jobString>
         <workAmount>24000</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
-        <effectWorking>Smelt</effectWorking>
-        <soundWorking>Recipe_Smelt</soundWorking>
         <researchPrerequisite>ABF_ResearchProject_Chemwalker_MechcloudBasics</researchPrerequisite>
         <recipeUsers>
             <li>FueledSmithy</li>
@@ -157,19 +155,13 @@
                 <li>Chemfuel</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
     </RecipeDef>
 
-    <RecipeDef>
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_RepairShellBase">
         <defName>ABF_Recipe_Chemwalker_RepairFlakkerShell</defName>
         <label>salvage flakker chemwalker shell</label>
         <description>Salvage what you can from flakker chemwalker scraps to construct a new shell.</description>
-        <jobString>Mending flakker shell.</jobString>
         <workAmount>10000</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
-        <effectWorking>Smelt</effectWorking>
-        <soundWorking>Recipe_Smelt</soundWorking>
         <researchPrerequisites>
             <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
             <li>FlakArmor</li>
@@ -204,7 +196,7 @@
             </li>
         </ingredients>
         <products>
-            <ABF_Thing_Chemwalker_Shell_FlakkerInscribed>1</ABF_Thing_Chemwalker_Shell_FlakkerInscribed>
+            <ABF_Thing_Chemwalker_Shell_Flakker>1</ABF_Thing_Chemwalker_Shell_Flakker>
         </products>
         <fixedIngredientFilter>
             <thingDefs>
@@ -213,19 +205,13 @@
                 <li>Chemfuel</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
     </RecipeDef>
 
-    <RecipeDef>
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_RepairShellBase">
         <defName>ABF_Recipe_Chemwalker_RepairMarineShell</defName>
         <label>salvage marine chemwalker shell</label>
         <description>Salvage what you can from marine chemwalker wreckage to construct a new shell.</description>
-        <jobString>Repairing marine shell.</jobString>
         <workAmount>10000</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
-        <effectWorking>Smelt</effectWorking>
-        <soundWorking>Recipe_Smelt</soundWorking>
         <researchPrerequisites>
             <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
             <li>PoweredArmor</li>
@@ -268,7 +254,7 @@
             </li>
         </ingredients>
         <products>
-            <ABF_Thing_Chemwalker_Shell_MarineInscribed>1</ABF_Thing_Chemwalker_Shell_MarineInscribed>
+            <ABF_Thing_Chemwalker_Shell_Marine>1</ABF_Thing_Chemwalker_Shell_Marine>
         </products>
         <fixedIngredientFilter>
             <thingDefs>
@@ -278,19 +264,13 @@
                 <li>Chemfuel</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
     </RecipeDef>
 
-    <RecipeDef>
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_RepairShellBase">
         <defName>ABF_Recipe_Chemwalker_RepairEltexShell</defName>
         <label>salvage eltex chemwalker shell</label>
         <description>Salvage what you can from eltex chemwalker wreckage to construct a new shell.</description>
-        <jobString>Repairing eltex shell.</jobString>
         <workAmount>10000</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
-        <effectWorking>Smelt</effectWorking>
-        <soundWorking>Recipe_Smelt</soundWorking>
         <researchPrerequisites>
             <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
             <li>ReconArmor</li>
@@ -333,7 +313,7 @@
             </li>
         </ingredients>
         <products>
-            <ABF_Thing_Chemwalker_Shell_EltexInscribed>1</ABF_Thing_Chemwalker_Shell_EltexInscribed>
+            <ABF_Thing_Chemwalker_Shell_Eltex>1</ABF_Thing_Chemwalker_Shell_Eltex>
         </products>
         <fixedIngredientFilter>
             <thingDefs>
@@ -343,19 +323,13 @@
                 <li>Chemfuel</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
     </RecipeDef>
 
-    <RecipeDef>
+    <RecipeDef ParentName="ABF_Recipe_Chemwalker_RepairShellBase">
         <defName>ABF_Recipe_Chemwalker_RepairCataphractShell</defName>
         <label>salvage cataphract chemwalker shell</label>
         <description>Salvage what you can from cataphract chemwalker wreckage to construct a new shell.</description>
-        <jobString>Repairing cataphract shell.</jobString>
         <workAmount>20000</workAmount>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-        <workSkill>Crafting</workSkill>
-        <effectWorking>Smelt</effectWorking>
-        <soundWorking>Recipe_Smelt</soundWorking>
         <researchPrerequisites>
             <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
             <li>CataphractArmor</li>
@@ -390,7 +364,7 @@
             </li>
         </ingredients>
         <products>
-            <ABF_Thing_Chemwalker_Shell_CataphractInscribed>1</ABF_Thing_Chemwalker_Shell_CataphractInscribed>
+            <ABF_Thing_Chemwalker_Shell_Cataphract>1</ABF_Thing_Chemwalker_Shell_Cataphract>
         </products>
         <fixedIngredientFilter>
             <thingDefs>
@@ -399,7 +373,6 @@
                 <li>Chemfuel</li>
             </thingDefs>
         </fixedIngredientFilter>
-        <unfinishedThingDef>ABF_Thing_Chemwalker_Shell_Unfinished</unfinishedThingDef>
     </RecipeDef>
 
 </Defs>

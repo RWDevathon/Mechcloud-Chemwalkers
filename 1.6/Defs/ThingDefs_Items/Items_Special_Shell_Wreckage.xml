@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Chemwalker wreckage, dropped on death, can be repaired or broken down -->
+
+    <ThingDef Name="ABF_Thing_Chemwalker_Shell_DamagedBase" ParentName="ResourceBase" Abstract="True">
+        <description>This pile of battered and broken armor - little more than scrap - is all but devoid of the sigils and mechanites that once kept it animated. With repairs and sufficient time, though, the unassuming wreckage may once again be a host to a swarm of mechanites in service to a psychic master. It can also be broken down for some salvageable resources.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedTechArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Standard_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <techLevel>Medieval</techLevel>
+        <stackLimit>1</stackLimit>
+        <thingCategories>
+            <li>ABF_ThingCategory_Chemwalker_Shells</li>
+        </thingCategories>
+        <smeltable>true</smeltable>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_DamagedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_MechcloudDamaged</defName>
+        <label>mechcloud chemwalker wreckage</label>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <Mass>20</Mass>
+        </statBases>
+        <smeltProducts>
+            <Steel>12</Steel>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_DamagedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_LumberingDamaged</defName>
+        <label>lumbering chemwalker wreckage</label>
+        <statBases>
+            <MarketValue>200</MarketValue>
+            <Mass>100</Mass>
+        </statBases>
+        <smeltProducts>
+            <Uranium>20</Uranium>
+            <Steel>10</Steel>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_DamagedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_FlakkerDamaged</defName>
+        <label>flakker chemwalker scraps</label>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <Mass>20</Mass>
+        </statBases>
+        <smeltProducts>
+            <Steel>25</Steel>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_DamagedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_MarineDamaged</defName>
+        <label>marine chemwalker wreckage</label>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <MarketValue>150</MarketValue>
+            <Mass>20</Mass>
+        </statBases>
+        <smeltProducts>
+            <Plasteel>15</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_DamagedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_EltexDamaged</defName>
+        <label>eltex chemwalker wreckage</label>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <Mass>20</Mass>
+        </statBases>
+        <smeltProducts>
+            <Plasteel>15</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+
+    <ThingDef ParentName="ABF_Thing_Chemwalker_Shell_DamagedBase">
+        <defName>ABF_Thing_Chemwalker_Shell_CataphractDamaged</defName>
+        <label>cataphract chemwalker wreckage</label>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <MarketValue>200</MarketValue>
+            <Mass>20</Mass>
+        </statBases>
+        <smeltProducts>
+            <Plasteel>20</Plasteel>
+            <Uranium>10</Uranium>
+        </smeltProducts>
+    </ThingDef>
+
+</Defs>

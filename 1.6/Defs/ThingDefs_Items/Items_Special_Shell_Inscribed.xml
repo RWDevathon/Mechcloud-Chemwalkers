@@ -121,16 +121,9 @@
             <WorkToMake>18000</WorkToMake>
         </statBases>
         <costList>
-            <Chemfuel>100</Chemfuel>
-            <Apparel_FlakPants>1</Apparel_FlakPants>
-            <Apparel_FlakJacket>1</Apparel_FlakJacket>
-            <Apparel_AdvancedHelmet>1</Apparel_AdvancedHelmet>
+            <ABF_Thing_Chemwalker_Shell_Flakker>1</ABF_Thing_Chemwalker_Shell_Flakker>
         </costList>
         <recipeMaker>
-            <researchPrerequisites>
-                <li>ABF_ResearchProject_Chemwalker_MechcloudBasics</li>
-                <li>FlakArmor</li>
-            </researchPrerequisites>
         </recipeMaker>
         <modExtensions>
             <li Class="ArtificialBeings.ABF_PawnSpawnerExtension">
@@ -159,9 +152,7 @@
             <WorkToMake>28000</WorkToMake>
         </statBases>
         <costList>
-            <Chemfuel>200</Chemfuel>
-            <Apparel_PowerArmorHelmet>1</Apparel_PowerArmorHelmet>
-            <Apparel_PowerArmor>1</Apparel_PowerArmor>
+            <ABF_Thing_Chemwalker_Shell_Marine>1</ABF_Thing_Chemwalker_Shell_Marine>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -196,9 +187,7 @@
             <WorkToMake>28000</WorkToMake>
         </statBases>
         <costList>
-            <Chemfuel>200</Chemfuel>
-            <Apparel_ArmorHelmetReconPrestige>1</Apparel_ArmorHelmetReconPrestige>
-            <Apparel_ArmorReconPrestige>1</Apparel_ArmorReconPrestige>
+            <ABF_Thing_Chemwalker_Shell_Eltex>1</ABF_Thing_Chemwalker_Shell_Eltex>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -232,9 +221,7 @@
             <WorkToMake>40000</WorkToMake>
         </statBases>
         <costList>
-            <Chemfuel>400</Chemfuel>
-            <Apparel_ArmorHelmetCataphract>1</Apparel_ArmorHelmetCataphract>
-            <Apparel_ArmorCataphract>1</Apparel_ArmorCataphract>
+            <ABF_Thing_Chemwalker_Shell_Cataphract>1</ABF_Thing_Chemwalker_Shell_Cataphract>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
