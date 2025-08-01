@@ -37,7 +37,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Artificial Beings Framework">
-      <HintPath>..\..\..\..\..\..\Artificial Beings Framework\1.5\Assemblies\Artificial Beings Framework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Artificial Beings Framework\1.6\Assemblies\Artificial Beings Framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -53,7 +53,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Mechcloud Chemwalkers">
-      <HintPath>..\..\..\..\..\1.5\Assemblies\Mechcloud Chemwalkers.dll</HintPath>
+      <HintPath>..\..\..\..\..\1.6\Assemblies\Mechcloud Chemwalkers.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
@@ -180,7 +180,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="VFEPirates">
-      <HintPath>..\..\..\..\..\..\..\..\..\workshop\content\294100\2723801948\1.5\Assemblies\VFEPirates.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\workshop\content\294100\2723801948\1.6\Assemblies\VFEPirates.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
