@@ -176,6 +176,9 @@
                 </artificialNeeds>
                 <onlyUseRaceRestrictedMedicine>true</onlyUseRaceRestrictedMedicine>
                 <droneQualityRange>Normal~Good</droneQualityRange>
+                <allowedDroneRitualParticipation>
+                    <li>AnimaTreeLinking</li>
+                </allowedDroneRitualParticipation>
             </li>
 		</modExtensions>
 		<butcherProducts>
