@@ -26,6 +26,7 @@
     </modDependencies>
     <packageId>Killathon.ArtificialBeings.MechcloudChemwalkers</packageId>
     <loadAfter>
+        <li>Killathon.ArtificialBeings</li>
     </loadAfter>
     <description><![CDATA[Suits of armor animated by mechanites, sustained by chemfuel, controlled psychically, ready to serve.
 
