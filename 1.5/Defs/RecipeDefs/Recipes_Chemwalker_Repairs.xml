@@ -14,6 +14,7 @@
         <researchPrerequisite>ABF_ResearchProject_Chemwalker_MechcloudBasics</researchPrerequisite>
         <recipeUsers>
             <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
         </recipeUsers>
         <ingredients>
             <li>
@@ -67,6 +68,7 @@
         <researchPrerequisite>ABF_ResearchProject_Chemwalker_MechcloudBasics</researchPrerequisite>
         <recipeUsers>
             <li>FueledSmithy</li>
+            <li>ElectricSmithy</li>
         </recipeUsers>
         <ingredients>
             <li>
