@@ -178,6 +178,7 @@
                 <droneQualityRange>Normal~Good</droneQualityRange>
                 <allowedDroneRitualParticipation>
                     <li>AnimaTreeLinking</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
                 </allowedDroneRitualParticipation>
             </li>
 		</modExtensions>
