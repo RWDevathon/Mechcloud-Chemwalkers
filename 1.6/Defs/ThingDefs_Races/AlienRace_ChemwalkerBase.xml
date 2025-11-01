@@ -11,6 +11,7 @@
             <ArmorRating_Heat>2.00</ArmorRating_Heat>
 			<ToxicResistance>1</ToxicResistance>
             <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 			<ImmunityGainSpeed>10</ImmunityGainSpeed>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
